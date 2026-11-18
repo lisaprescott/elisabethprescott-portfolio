@@ -170,7 +170,7 @@ PROJECTS = [
         "leadership": [
             "Led UX for the ES8 HMI program from zero to production.",
         ],
-        "gallery": [],
+        "gallery": [("../images/cs/nio-hmi-home.png", "Centre-display concept, June 2018: navigation as the anchor, media and climate one gesture away")],
         "sources": [
             ("iF Design: Infotainment System HMI for NIO ES8/ES6", "https://ifdesign.com/en/winner-ranking/project/infotainment-system-hmi-design-for-nio-es8es6/282405"),
             ("Electric Cars Report: NIO OS wins iF Design Award 2020", "https://electriccarsreport.com/2020/05/nio-os-and-nio-life-concept-scooter-win-if-design-award-2020/"),
@@ -393,7 +393,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=9">
+<link rel="stylesheet" href="../css/styles.css?v=10">
 </head>
 <body class="cs-page">
 

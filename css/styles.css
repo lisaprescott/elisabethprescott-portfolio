@@ -578,3 +578,6 @@ body.resume-page, body.cs-page { scroll-snap-type: none; }
 html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 .cs-figure--pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 @media (max-width: 600px) { .cs-figure--pair { grid-template-columns: 1fr; } }
+
+/* Portrait UI frames: show at native 2x size, centred */
+.cs-figure img[src*="nio-hmi"] { max-width: 600px; margin: 0 auto; display: block; }
