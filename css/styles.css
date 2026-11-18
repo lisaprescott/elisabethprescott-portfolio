@@ -159,8 +159,7 @@ a:hover { opacity: .85; }
 /* PROJECT STACK */
 .project-band {
   display: block;
-  position: sticky;
-  top: var(--stack-top);
+  position: relative;
   height: calc(100vh - var(--stack-top));
   min-height: 420px;
   overflow: hidden;
@@ -477,3 +476,31 @@ a:hover { opacity: .85; }
   .role + .role { padding-top: 16px; }
   .role__title { font-size: 18px; }
 }
+
+/* Phone-row heroes: full-res screenshots shown at or below native size, never upscaled */
+.project-band__image--phones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5vw;
+  padding: 4vh 4vw 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f1ede5 100%);
+  overflow: hidden;
+}
+.project-band__image--phones img {
+  height: 96%;
+  width: auto;
+  max-width: 31%;
+  object-fit: contain;
+  object-position: top;
+}
+@media (max-width: 600px) {
+  .project-band__image--phones img:nth-child(1),
+  .project-band__image--phones img:nth-child(3) { display: none; }
+  .project-band__image--phones img { max-width: 80%; }
+}
+
+/* Filter bar: chips scroll sideways on narrow screens instead of wrapping */
+.filter-bar__chips { overflow-x: auto; scrollbar-width: none; margin-left: -14px; }
+.filter-bar__chips::-webkit-scrollbar { display: none; }
+.chip { white-space: nowrap; }

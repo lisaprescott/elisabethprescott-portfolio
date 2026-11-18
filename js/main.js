@@ -43,7 +43,7 @@ function initFilterChips() {
       const cat = chip.dataset.cat;
       let visibleCount = 0;
       bands.forEach(band => {
-        const match = cat === 'All' || band.dataset.cat === cat;
+        const match = cat === 'All' || band.dataset.cat.split(' ').includes(cat);
         band.style.display = match ? '' : 'none';
         if (match) visibleCount++;
       });
@@ -93,6 +93,7 @@ function initBandImages() {
     band.appendChild(index);
 
     const imageEl = band.querySelector('.project-band__image');
+    if (imageEl && imageEl.querySelector('img')) return; // composed from <img> elements
     const match = imageEl && imageEl.style.backgroundImage.match(/url\(["']?(.*?)["']?\)/);
     if (!match) { band.classList.add('is-placeholder'); return; }
     const probe = new Image();
