@@ -183,7 +183,7 @@ PROJECTS = [
         "eyebrow": "Spatialand · Brand · Immersive · 2018–2019",
         "dek": "Brand and platform design for Spatialand (Spatia), the VR studio from the founders of Prologue, acquired by Walmart's Store No 8.",
         "facts": [("Company", "Spatialand / Spatia"), ("Scope", "Brand, platform worlds, spatial language"), ("Role", "Design lead, via agency:collective"), ("Timeline", "2018–2019")],
-        "hero": "../images/spatialand.png",
+        "hero": "../images/spatialand.jpg",
         "problem": [
             "VR content was built one-off and thrown away. Spatialand set out to give brands persistent worlds they could return to, and it needed a brand and an interface language that made that idea legible to clients who had never worn a headset.",
         ],
@@ -196,7 +196,7 @@ PROJECTS = [
         "leadership": [
             "Worked with founders Kyle and Kim Cooper in a 10-person studio, leading design for the platform and client worlds.",
         ],
-        "gallery": [],
+        "gallery": [("../images/cs/spatialand-parallax.jpg", "Spatialand brand imagery: parallax study")],
         "sources": [
             ("UploadVR: Prologue Immersive introduces Spatialand", "https://www.uploadvr.com/prologue-immersive-introduces-spatialand-vr-interface/"),
             ("UploadVR: Walmart acquires Spatialand", "https://www.uploadvr.com/walmart-acquires-content-studio-spatialand-drive-vr-retail/"),
