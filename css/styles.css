@@ -504,3 +504,62 @@ a:hover { opacity: .85; }
 .filter-bar__chips { overflow-x: auto; scrollbar-width: none; margin-left: -14px; }
 .filter-bar__chips::-webkit-scrollbar { display: none; }
 .chip { white-space: nowrap; }
+
+/* CASE STUDY PAGES */
+.cs { padding-bottom: 40px; }
+.cs-header { max-width: 1180px; padding: 72px var(--gutter) 56px; }
+.cs-back { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8f8778; margin-bottom: 40px; }
+.cs-title { font-family: 'Tiempos', serif; font-weight: 700; font-size: 76px; line-height: 1.02; letter-spacing: -.02em; }
+.cs-dek { font-size: 22px; line-height: 1.5; color: #4a453d; max-width: 36em; margin-top: 28px; }
+.cs-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--border); }
+.cs-fact__label { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #a89f8f; margin-bottom: 10px; }
+.cs-fact__value { font-size: 15px; line-height: 1.5; color: var(--ink); font-weight: 500; }
+
+.cs-hero { background: #0e0d0b; }
+.cs-hero img { display: block; width: 100%; height: auto; max-height: 86vh; object-fit: cover; }
+.cs-hero--phones { display: flex; justify-content: center; gap: 3vw; padding: 6vh 4vw 0; background: linear-gradient(180deg, #fff 0%, #efeae1 100%); overflow: hidden; }
+.cs-hero--phones img { width: auto; height: 70vh; max-width: 30%; object-fit: contain; object-position: top; }
+
+.cs-section { display: grid; grid-template-columns: 200px minmax(0, 760px); gap: 40px; max-width: 1180px; padding: 72px var(--gutter) 0; }
+.cs-label { font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); padding-top: 8px; }
+.cs-body p { font-size: 19px; line-height: 1.65; color: #2e2a25; }
+.cs-body p + p { margin-top: 20px; }
+
+.cs-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.cs-stat { background: var(--bg); padding: 28px 24px 30px; }
+.cs-stat__value { font-family: 'Tiempos', serif; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -.02em; color: var(--ink); }
+.cs-stat__label { font-size: 14px; line-height: 1.45; color: #5a544a; margin-top: 14px; }
+
+.cs-figure { max-width: 1180px; margin: 72px auto 0; padding: 0 var(--gutter); }
+.cs-figure img { display: block; width: 100%; height: auto; }
+
+.cs-sources ul { list-style: none; }
+.cs-sources li { font-size: 14px; line-height: 1.5; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.cs-sources a { color: #5a544a; text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+.cs-sources a:hover { color: var(--accent); }
+
+.cs-next { display: grid; grid-template-columns: 1fr 1fr; margin-top: 112px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.cs-next a { padding: 40px var(--gutter); font-family: 'Tiempos', serif; font-weight: 700; font-size: 32px; line-height: 1.1; }
+.cs-next a + a { text-align: right; border-left: 1px solid var(--border); }
+.cs-next span { display: block; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #a89f8f; margin-bottom: 12px; }
+.cs-next a:hover { color: var(--accent); opacity: 1; }
+
+@media (max-width: 900px) {
+  .cs-title { font-size: 52px; }
+  .cs-facts { grid-template-columns: 1fr 1fr; }
+  .cs-section { grid-template-columns: 1fr; gap: 16px; padding-top: 56px; }
+}
+@media (max-width: 600px) {
+  .cs-header { padding-top: 48px; }
+  .cs-back { margin-bottom: 28px; }
+  .cs-title { font-size: 40px; }
+  .cs-dek { font-size: 18px; }
+  .cs-facts { gap: 20px; margin-top: 36px; }
+  .cs-body p { font-size: 17px; }
+  .cs-stat__value { font-size: 38px; }
+  .cs-hero--phones img { height: 52vh; max-width: 80%; }
+  .cs-hero--phones img:nth-child(1), .cs-hero--phones img:nth-child(3) { display: none; }
+  .cs-next a { font-size: 22px; padding: 28px var(--gutter); }
+}
+.cs-stats { gap: 16px; background: none; border: none; }
+.cs-stat { border: 1px solid var(--border); }
