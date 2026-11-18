@@ -214,7 +214,8 @@ a:hover { opacity: .85; }
 .project-band[aria-disabled="true"] { cursor: default; }
 .project-band[aria-disabled="true"]:hover { opacity: 1; }
 .project-band[aria-disabled="true"] .project-band__cta { border-style: dashed; }
-.project-band[aria-disabled="true"]:hover .project-band__cta { background: none; color: inherit; }
+.project-band[aria-disabled="true"]:hover .project-band__cta { background: none; color: #fff; }
+.project-band.is-placeholder[aria-disabled="true"]:hover .project-band__cta { color: var(--band-ink); }
 
 /* Placeholder state: shown when a band's image hasn't been added yet */
 .project-band__index { display: none; }
