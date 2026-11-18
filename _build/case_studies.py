@@ -155,7 +155,7 @@ PROJECTS = [
         "slug": "nio",
         "title": "NIO ES8",
         "eyebrow": "NIO · Automotive · 2018",
-        "dek": "0→1 design of the in-car HMI for NIO's first production vehicle, the ES8, later recognized with an iF Design Award.",
+        "dek": "0→1 design of the in-car HMI for NIO's first production vehicle, the ES8, later recognized with an iF Design Award and showcased at SXSW.",
         "facts": [("Role", "Senior UX Director"), ("Scope", "In-vehicle HMI, 0→1"), ("Shipped", "NIO ES8, 2018"), ("Recognition", "iF Design Award 2020 (NIO OS)")],
         "hero": "../images/nio.png",
         "problem": [
@@ -164,6 +164,7 @@ PROJECTS = [
         "approach": [
             "Designed the HMI system from first principles: navigation as the anchor, media and vehicle controls one gesture away, and fast-control patterns that keep eyes on the road.",
             "Built the 11.3-inch centre display experience that shipped in the ES8 and carried into the ES6 as NIO OS.",
+            "Authored the ES8 UX/UI design principles that guided the system, and an immersive digital experience showcased at SXSW.",
         ],
         "results": [("97%", "customer satisfaction"), ("+35%", "ES8 sales contribution"), ("iF", "Design Award for the ES8/ES6 infotainment HMI")],
         "leadership": [
@@ -179,25 +180,25 @@ PROJECTS = [
     {
         "slug": "spatialand",
         "title": "Spatialand",
-        "eyebrow": "Spatialand · Brand · Immersive · 2017",
-        "dek": "Brand and experience design for Spatialand, the VR platform from the founders of Prologue, acquired by Walmart's Store No 8 in 2018.",
-        "facts": [("Company", "Spatialand (Prologue Immersive)"), ("Scope", "Brand, platform and destination design"), ("Era", "2016–2018"), ("Outcome", "Acquired by Walmart, Feb 2018")],
+        "eyebrow": "Spatialand · Brand · Immersive · 2018–2019",
+        "dek": "Brand and platform design for Spatialand (Spatia), the VR studio from the founders of Prologue, acquired by Walmart's Store No 8.",
+        "facts": [("Company", "Spatialand / Spatia"), ("Scope", "Brand, platform worlds, spatial language"), ("Role", "Design lead, via agency:collective"), ("Timeline", "2018–2019")],
         "hero": "../images/spatialand.png",
         "problem": [
-            "VR content was built one-off and thrown away. Spatialand set out to give brands and artists persistent destinations they could design and update themselves, and it needed an identity and interface that made that idea legible to clients who had never worn a headset.",
+            "VR content was built one-off and thrown away. Spatialand set out to give brands persistent worlds they could return to, and it needed a brand and an interface language that made that idea legible to clients who had never worn a headset.",
         ],
         "approach": [
-            "Designed the brand and the in-headset language together, so the identity was something you could stand inside, not a logo applied to a product.",
-            "Applied the system to launch destinations, including the Linkin Park VR Destination for the One More Light World Tour on Oculus Rift and HTC Vive.",
+            "Designed the Spatia platform worlds, branded environments built on one system. Concepts included worlds for Chanel, Apple and Walmart.",
+            "Created a spatial language for type and UI in 3D (lower thirds, prompts and confirmations) so information could live in the environment rather than float over it.",
+            "Designed the brand and the in-headset experience together, so the identity was something you could stand inside.",
         ],
-        "results": [("2018", "acquired by Walmart's Store No 8 as the foundation of its VR commerce venture"), ("Jul 2017", "Linkin Park VR Destination launch")],
+        "results": [("3", "brand platform worlds designed: Chanel, Apple, Walmart"), ("2018", "Spatialand acquired by Walmart's Store No 8")],
         "leadership": [
-            "Worked with founders Kyle and Kim Cooper in a 10-person studio.",
+            "Worked with founders Kyle and Kim Cooper in a 10-person studio, leading design for the platform and client worlds.",
         ],
         "gallery": [],
         "sources": [
             ("UploadVR: Prologue Immersive introduces Spatialand", "https://www.uploadvr.com/prologue-immersive-introduces-spatialand-vr-interface/"),
-            ("Road to VR: Linkin Park VR experience by Spatialand and Intel", "https://www.roadtovr.com/linkin-park-release-vr-experience-built-spatialand-intel/"),
             ("UploadVR: Walmart acquires Spatialand", "https://www.uploadvr.com/walmart-acquires-content-studio-spatialand-drive-vr-retail/"),
             ("Fortune: Walmart virtual reality", "https://fortune.com/2018/02/06/walmart-virtual-reality/"),
         ],
@@ -205,19 +206,20 @@ PROJECTS = [
     {
         "slug": "chanel",
         "title": "Chanel Immersive",
-        "eyebrow": "Chanel · Immersive · 2017",
-        "dek": "An immersive environment built around Chanel watchmaking, from the movement to the Paris streets that shaped the house.",
-        "facts": [("Studio", "Spatialand"), ("Scope", "Immersive concept and art direction"), ("Era", "2017"), ("Medium", "VR")],
+        "eyebrow": "Chanel × Spatialand · Immersive · 2018",
+        "dek": "A Chanel world on the Spatia platform, built around the J12 watch: step inside the movement and the Paris addresses that define the house.",
+        "facts": [("Studio", "Spatialand"), ("Product", "Chanel J12"), ("Scope", "Immersive world and art direction"), ("Year", "2018")],
         "hero": "../images/chanel.png",
         "problem": [
-            "Luxury depends on craft that is invisible at the counter. The brief was to let a visitor step inside a Chanel timepiece and understand the craft and the house's Paris heritage without a word of copy.",
+            "Luxury depends on craft that is invisible at the counter. The brief was to let a visitor step inside a Chanel J12 and understand its craft and the house's Paris heritage without a word of copy.",
         ],
         "approach": [
-            "Built the environment from the movement outward: gears, gemstones and dial elements at architectural scale, threaded with rue Cambon, rue de Rivoli and Madeleine, the addresses that define the house.",
+            "Built the world from the movement outward: gears, gemstones and dial elements at architectural scale, threaded with rue Cambon, rue de Rivoli and Madeleine, the addresses that define the house.",
+            "Developed it as one of the Spatia platform's brand worlds, using the same system as the Walmart and Apple worlds.",
         ],
         "results": [],
         "leadership": [
-            "Led the experience design within the Spatialand studio.",
+            "Led the experience design and art direction within the Spatialand studio.",
         ],
         "gallery": [],
         "sources": [],
@@ -225,25 +227,26 @@ PROJECTS = [
     {
         "slug": "walmart",
         "title": "Walmart Immersive",
-        "eyebrow": "Walmart · Immersive · 2017",
-        "dek": "VR shopping proof of concept for Walmart's Store No 8 incubator, the work that led to Walmart acquiring Spatialand.",
-        "facts": [("Client", "Walmart Store No 8"), ("Studio", "Spatialand"), ("Showcased", "Innov8 V-Commerce gala, Oct 2017"), ("Outcome", "Walmart acquired Spatialand, Feb 2018")],
+        "eyebrow": "Walmart × Spatialand · Immersive · 2018–2019",
+        "dek": "Virtual reality retail for Walmart's Store No 8: shoppable rooms, product stories and avatars that turn browsing into a place you step into.",
+        "facts": [("Client", "Walmart · Store No 8"), ("Studio", "Spatialand"), ("Role", "Design lead, via agency:collective"), ("Timeline", "May 2018 – Dec 2019")],
         "hero": "../images/walmart.png",
         "problem": [
-            "Walmart's incubator wanted to know whether VR could change how people shop, before Amazon did. It needed a working experience, not a deck.",
+            "Walmart acquired Spatialand in February 2018 to explore how virtual reality could change shopping. The open question was what VR commerce should feel like for a mass-market customer, not a tech demo: how you enter, how you find products, and why you'd stay.",
         ],
         "approach": [
-            "Designed a curved, gallery-like virtual store: products presented as objects in lit niches, a product card that opens in place, and a running basket that stays in view.",
-            "Built Innov8, Store No 8's V-Commerce gala, as the proof of concept for the future of shopping.",
+            "Designed The World of Walmart, an immersive environment you enter through a portal and move through as a series of shoppable rooms.",
+            "Built room sets around lifestyle collections (Glam and Farmhouse) where each product has its own story moment: the rug, the sofa, the lamp and the pillow each animate into focus with materials, context and price.",
+            "Designed the avatar and personalization layer (\"Is this you?\"), along with in-world alerts, product selection and the type system that carries pricing and calls to action in 3D space.",
         ],
-        "results": [("~200", "submissions to the Innov8 open call"), ("2018", "Walmart acquired Spatialand to build its VR venture")],
+        "results": [("2", "lifestyle collections designed as shoppable VR room sets"), ("19 mo", "from first demo to the World of Walmart program")],
         "leadership": [
-            "Led design for the experience within the Spatialand studio.",
+            "Led design from the first demo explorations in May 2018 through the 2019 World of Walmart program, working with the Spatialand team and Store No 8.",
         ],
-        "gallery": [],
+        "gallery": [("../images/cs/walmart-roomsets.jpg", "World of Walmart room set progression"), [("../images/cs/walmart-glam-rug.jpg", "Glam collection: rug product story"), ("../images/cs/walmart-glam-sofa.jpg", "Glam collection: sofa product story")]],
         "sources": [
-            ("PR Newswire: Store No 8 hosts Innov8 V-Commerce gala", "https://prnewswire.com/news-releases/store-no-8-hosts-innov8-v-commerce-gala-previewing-the-future-of-retail-in-virtual-reality-300539243.html"),
             ("UploadVR: Walmart acquires Spatialand", "https://www.uploadvr.com/walmart-acquires-content-studio-spatialand-drive-vr-retail/"),
+            ("Fortune: Walmart virtual reality", "https://fortune.com/2018/02/06/walmart-virtual-reality/"),
             ("Retail Dive: Spatialand launches first VR experience", "https://www.retaildive.com/news/walmart-startup-spatialand-launches-first-vr-experience/548501/"),
         ],
     },
@@ -364,8 +367,13 @@ def page(p, prev_p, next_p):
 {tiles}
     </div>
   </section>'''
-    gallery = "\n".join(
-        f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"></figure>' for src, alt in p["gallery"])
+    def fig(item):
+        if isinstance(item, list):  # side-by-side pair
+            imgs = "".join(f'<img src="{src}" alt="{E(alt)}" loading="lazy">' for src, alt in item)
+            return f'  <figure class="cs-figure cs-figure--pair">{imgs}</figure>'
+        src, alt = item
+        return f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"></figure>'
+    gallery = "\n".join(fig(g) for g in p["gallery"])
     sources = ""
     if p["sources"]:
         items = "\n".join(f'      <li><a href="{E(u)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in p["sources"])
@@ -385,7 +393,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=8">
+<link rel="stylesheet" href="../css/styles.css?v=9">
 </head>
 <body class="cs-page">
 
