@@ -98,6 +98,19 @@ function initBandImages() {
     if (!match) { band.classList.add('is-placeholder'); return; }
     const probe = new Image();
     probe.onerror = () => band.classList.add('is-placeholder');
+    probe.onload = () => {
+      // Never upscale: if the source can't cover the panel at 2x density, show it at native
+      // sharpness (natural px / 2) centered on the panel's background instead of stretching it.
+      if (probe.naturalWidth < band.clientWidth * 2) {
+        const img = document.createElement('img');
+        img.src = probe.src;
+        img.alt = '';
+        img.style.maxWidth = Math.round(probe.naturalWidth / 2) + 'px';
+        imageEl.style.backgroundImage = 'none';
+        imageEl.classList.add('project-band__image--native');
+        imageEl.appendChild(img);
+      }
+    };
     probe.src = match[1];
   });
 }

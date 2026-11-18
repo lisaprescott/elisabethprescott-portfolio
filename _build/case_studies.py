@@ -9,6 +9,7 @@ that project's `sources`. Do not add numbers without a source.
 """
 import html
 import pathlib
+import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "casestudy"
@@ -325,6 +326,16 @@ PROJECTS = [
 E = html.escape
 
 
+def native_width(src):
+    """Pixel width of a local image, via macOS sips (no third-party deps)."""
+    path = (OUT / src).resolve()
+    try:
+        out = subprocess.run(["sips", "-g", "pixelWidth", str(path)], capture_output=True, text=True).stdout
+        return int(out.split("pixelWidth:")[1].strip())
+    except Exception:
+        return None
+
+
 def paras(items):
     return "\n".join(f"      <p>{E(p)}</p>" for p in items)
 
@@ -337,7 +348,11 @@ def page(p, prev_p, next_p):
         imgs = "\n".join(f'    <img src="{src}" alt="">' for src in p["hero_phones"])
         hero = f'  <div class="cs-hero cs-hero--phones">\n{imgs}\n  </div>'
     else:
-        hero = f'  <div class="cs-hero"><img src="{p["hero"]}" alt="{E(p["title"])}"></div>'
+        w = native_width(p["hero"])
+        if w and w < 2880:  # can't fill a 1440px-wide screen at 2x: show at native sharpness
+            hero = f'  <div class="cs-hero cs-hero--native"><img src="{p["hero"]}" alt="{E(p["title"])}" style="max-width:{w // 2}px"></div>'
+        else:
+            hero = f'  <div class="cs-hero"><img src="{p["hero"]}" alt="{E(p["title"])}"></div>'
     results = ""
     if p["results"]:
         tiles = "\n".join(
@@ -370,7 +385,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=6">
+<link rel="stylesheet" href="../css/styles.css?v=7">
 </head>
 <body class="cs-page">
 

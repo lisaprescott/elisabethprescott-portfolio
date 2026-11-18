@@ -563,3 +563,9 @@ a:hover { opacity: .85; }
 }
 .cs-stats { gap: 16px; background: none; border: none; }
 .cs-stat { border: 1px solid var(--border); }
+
+/* Native-sharpness heroes (sources smaller than 2x the panel): centered, never upscaled */
+.project-band__image--native { display: flex; align-items: center; justify-content: center; padding: 0 4vw 18vh; }
+.project-band__image--native img { display: block; width: 100%; height: auto; }
+.cs-hero--native { display: flex; justify-content: center; padding: 10vh 4vw; }
+.cs-hero--native img { width: 100%; height: auto; max-height: none; object-fit: contain; }
