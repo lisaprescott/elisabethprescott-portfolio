@@ -1,14 +1,12 @@
 const phrases = [
-  { text: 'loosening its collar.', src: 'Dezeen · 2026' },
-  { text: 'done with the immaculate render.', src: 'Dezeen · 2026' },
-  { text: 'getting warmer, darker, more expressive.', src: 'Dwell · 2026' },
-  { text: 'choosing tactility over seamless finishes.', src: 'Dwell · 2026' },
-  { text: 'welcoming ornament back.', src: 'Dwell · 2026' },
-  { text: 'a system now, not a screen.', src: 'mean.ceo · 2026' },
-  { text: 'a brief that machines can read.', src: 'Design.md · 2026' },
-  { text: 'directing intent, not executing tasks.', src: 'Architectural Record · 2026' },
-  { text: 'making room for imperfection.', src: 'Dezeen · 2026' },
-  { text: 'having its purple moment.', src: 'Business of Home · 2026' },
+  { text: 'leaning into the messy middle.', src: 'Figma, State of the Designer · 2026' },
+  { text: 'still human-led.', src: 'Fast Company · 2026' },
+  { text: 'adding the right friction back in.', src: 'Fast Company · 2026' },
+  { text: 'resisting AI’s pull toward sameness.', src: 'Fast Company · 2026' },
+  { text: 'keeping imperfection, not erasing it.', src: 'ADC 105th Annual Awards · 2026' },
+  { text: 'turning tactile again.', src: 'Wallpaper*, Milan Design Week · 2026' },
+  { text: 'expanding its influence.', src: 'Figma · 2026' },
+  { text: 'just-exactly-not-quite-right.', src: 'Fast Company · 2026' },
 ];
 
 function initPhraseRotation() {

@@ -27,9 +27,9 @@ PROJECTS = [
             "The business needed the app to drive demand for creators, not just fulfil it.",
         ],
         "approach": [
-            "Repositioned the app from transaction to discovery: a Discover tab built on curated It-Lists from local tastemakers in London, New York, Los Angeles and Melbourne; contact sync to see which events friends are attending; video and social signals in recommendations.",
-            "Rebuilt the interface on a modular, card-based design system so the product team could extend it after launch, and launched it alongside the brand refresh as a single moment.",
-            "Ran a three-month beta to prove revenue impact before global rollout.",
+            "Set the strategy with the CPO to reposition the app from transaction to discovery, and directed the product design team through it: a Discover tab built on curated It-Lists from local tastemakers in London, New York, Los Angeles and Melbourne; contact sync to see which events friends are attending; video and social signals in recommendations.",
+            "Had the design systems team rebuild the interface on a modular, card-based system so product teams could extend it after launch, and aligned the release with the brand refresh as a single moment.",
+            "Sponsored a three-month beta with product and data leadership to prove revenue impact before global rollout.",
         ],
         "results": [("+12%", "paid tickets on iOS; $3M net revenue in a 3-month beta"), ("+8%", "paid tickets on Android; $2M net revenue"), ("+23%", "monthly active users"), ("+14%", "traffic to Eventbrite surfaces year over year (Instrument)")],
         "leadership": [
@@ -83,8 +83,8 @@ PROJECTS = [
         ],
         "approach": [
             "Stood up a dedicated Innovation team inside Design to address fragmented discovery and declining mobile engagement.",
-            "Prototyped an Eventbrite experience inside ChatGPT: conversational queries resolved into rich event cards, social proof from friends, and a path to purchase without leaving the conversation.",
-            "Used the work to set a point of view on AI-era distribution for the executive team.",
+            "Directed the team's prototype of an Eventbrite experience inside ChatGPT: conversational queries resolved into rich event cards, social proof from friends, and a path to purchase without leaving the conversation.",
+            "Took the work to the executive team as a point of view on AI-era distribution.",
         ],
         "results": [],
         "leadership": [
@@ -107,13 +107,13 @@ PROJECTS = [
             "Travel search had worked the same way for 25 years: type a destination, pick dates. Most people can name only a few dozen destinations, yet Airbnb had listings in roughly 100,000 towns and cities. Unique homes were invisible unless you already knew where to look.",
         ],
         "approach": [
-            "Organized homes by what makes them special rather than where they are: 55+ categories such as OMG!, Design, Camping and National Parks, covering more than 4 million homes.",
-            "Paired machine learning across titles, descriptions, photo captions and reviews with human curation of the lead photo for every listing in every category.",
-            "Made the map respond to the category, zooming to show where those homes are, so browsing became a way to discover destinations, not just homes.",
+            "Led design for a new way to browse, organizing homes by what makes them special rather than where they are: 55+ categories such as OMG!, Design, Camping and National Parks, covering more than 4 million homes.",
+            "Worked with product, engineering and data science leads to pair machine learning across titles, descriptions, photo captions and reviews with human curation of the lead photo for every listing in every category.",
+            "Pushed for the map to respond to the category, zooming to show where those homes are, so browsing became a way to discover destinations, not just homes.",
         ],
         "results": [("180M", "views in the first weeks"), ("4M+", "homes organized into 55+ categories"), ("Record", "daily visitors after launch")],
         "leadership": [
-            "Senior Director in Workshop, Airbnb's internal 0→1 team, on a marketplace serving 220+ countries and $17B in gross booking value in Q2 2022.",
+            "Senior Director in Workshop, Airbnb's internal 0→1 team, leading designers across the categories and maps work on a marketplace serving 220+ countries and $17B in gross booking value in Q2 2022.",
         ],
         "gallery": [("../images/cs/airbnb-categoryList.png", "Airbnb Categories list")],
         "sources": [
@@ -135,13 +135,13 @@ PROJECTS = [
             "Maps, the platform's largest discovery surface, showed price pins rather than helping guests understand a place.",
         ],
         "approach": [
-            "Redesigned Wishlists as a shared planning space: invite the group, add homes, write notes and vote; sharing a listing automatically creates a wishlist.",
-            "Connected planning to the trip itself: invitations as digital postcards and a single group thread with the host.",
-            "Rebuilt Maps as a destination-first experience, so the map answers where to go, not just where the pins are.",
+            "Set the vision for Wishlists as a shared planning space and led the team that designed it: invite the group, add homes, write notes and vote; sharing a listing automatically creates a wishlist.",
+            "Extended the work into the trip itself: invitations as digital postcards and a single group thread with the host.",
+            "Directed the redesign of Maps as a destination-first experience, so the map answers where to go, not just where the pins are.",
         ],
         "results": [("80%+", "of bookings are group trips, now planned inside Airbnb"), ("3", "US design patents issued Aug 22, 2024: Calendar, Wishlists, Simple Save")],
         "leadership": [
-            "Owned design for Maps and Wishlists within Workshop, carrying the work from concept through patent filings to a global release.",
+            "Led the design team for Maps and Wishlists within Workshop, taking the work from concept through three design patents to a global release, in partnership with product and engineering leadership.",
         ],
         "gallery": [],
         "sources": [
@@ -161,13 +161,13 @@ PROJECTS = [
             "NIO was launching its first production car into a market that compared every screen to a smartphone. The HMI had to be fast to operate while driving, coherent across the centre display and instrument cluster, and distinctive enough to define a new brand.",
         ],
         "approach": [
-            "Designed the HMI system from first principles: navigation as the anchor, media and vehicle controls one gesture away, and fast-control patterns that keep eyes on the road.",
-            "Built the 11.3-inch centre display experience that shipped in the ES8 and carried into the ES6 as NIO OS.",
-            "Authored the ES8 UX/UI design principles that guided the system, and an immersive digital experience showcased at SXSW.",
+            "Set the direction for the HMI system from first principles: navigation as the anchor, media and vehicle controls one gesture away, and fast-control patterns that keep eyes on the road.",
+            "Led the team that delivered the 11.3-inch centre display experience, which shipped in the ES8 and carried into the ES6 as NIO OS.",
+            "Wrote the ES8 UX/UI design principles that guided the team, and oversaw an immersive digital experience showcased at SXSW.",
         ],
         "results": [("97%", "customer satisfaction"), ("+35%", "ES8 sales contribution"), ("iF", "Design Award for the ES8/ES6 infotainment HMI")],
         "leadership": [
-            "Led UX for the ES8 HMI program from zero to production.",
+            "Led the UX team for the ES8 HMI program from zero to production, working across NIO's studios and with vehicle engineering.",
         ],
         "gallery": [("../images/cs/nio-hmi-home.png", "Centre-display concept, June 2018: navigation as the anchor, media and climate one gesture away")],
         "sources": [
@@ -187,9 +187,9 @@ PROJECTS = [
             "VR content was built one-off and thrown away. Spatialand set out to give brands persistent worlds they could return to, and it needed a brand and an interface language that made that idea legible to clients who had never worn a headset.",
         ],
         "approach": [
-            "Designed the Spatia platform worlds, branded environments built on one system. Concepts included worlds for Chanel, Apple and Walmart.",
-            "Created a spatial language for type and UI in 3D (lower thirds, prompts and confirmations) so information could live in the environment rather than float over it.",
-            "Designed the brand and the in-headset experience together, so the identity was something you could stand inside.",
+            "Led design of the Spatia platform worlds, branded environments built on one system. Concepts included worlds for Chanel, Apple and Walmart.",
+            "Directed a spatial language for type and UI in 3D (lower thirds, prompts and confirmations) so information could live in the environment rather than float over it.",
+            "Brought the brand and the in-headset experience together under one direction, so the identity was something you could stand inside.",
         ],
         "results": [("3", "brand platform worlds designed: Chanel, Apple, Walmart"), ("2018", "Spatialand acquired by Walmart's Store No 8")],
         "leadership": [
@@ -213,7 +213,7 @@ PROJECTS = [
             "Luxury depends on craft that is invisible at the counter. The brief was to let a visitor step inside a Chanel J12 and understand its craft and the house's Paris heritage without a word of copy.",
         ],
         "approach": [
-            "Built the world from the movement outward: gears, gemstones and dial elements at architectural scale, threaded with rue Cambon, rue de Rivoli and Madeleine, the addresses that define the house.",
+            "Directed the world from the movement outward: gears, gemstones and dial elements at architectural scale, threaded with rue Cambon, rue de Rivoli and Madeleine, the addresses that define the house.",
             "Developed it as one of the Spatia platform's brand worlds, using the same system as the Walmart and Apple worlds.",
         ],
         "results": [],
@@ -234,9 +234,9 @@ PROJECTS = [
             "Walmart acquired Spatialand in February 2018 to explore how virtual reality could change shopping. The open question was what VR commerce should feel like for a mass-market customer, not a tech demo: how you enter, how you find products, and why you'd stay.",
         ],
         "approach": [
-            "Designed The World of Walmart, an immersive environment you enter through a portal and move through as a series of shoppable rooms.",
-            "Built room sets around lifestyle collections (Glam and Farmhouse) where each product has its own story moment: the rug, the sofa, the lamp and the pillow each animate into focus with materials, context and price.",
-            "Designed the avatar and personalization layer (\"Is this you?\"), along with in-world alerts, product selection and the type system that carries pricing and calls to action in 3D space.",
+            "Led the design of The World of Walmart, an immersive environment you enter through a portal and move through as a series of shoppable rooms.",
+            "Directed room sets around lifestyle collections (Glam and Farmhouse) where each product has its own story moment: the rug, the sofa, the lamp and the pillow each animate into focus with materials, context and price.",
+            "Shaped the avatar and personalization layer (\"Is this you?\"), along with in-world alerts, product selection and the type system that carries pricing and calls to action in 3D space.",
         ],
         "results": [("2", "lifestyle collections designed as shoppable VR room sets"), ("19 mo", "from first demo to the World of Walmart program")],
         "leadership": [
@@ -261,9 +261,9 @@ PROJECTS = [
             "MyFord Touch was slow, cluttered and widely criticised, and complaints about it were dragging down Ford's quality and satisfaction scores in J.D. Power and other surveys. Ford needed to win back trust in its in-car experience.",
         ],
         "approach": [
-            "Rebuilt the system from scratch on QNX with an 8-inch capacitive touchscreen that responds like a phone.",
-            "Simplified the home screen to three zones (navigation, audio, phone) that expand on touch; kept physical knobs for volume and climate; shortened voice commands to natural phrases; added over-the-air updates.",
-            "Created Ford's first automotive design system and a 10-year EV and infotainment roadmap.",
+            "Led the design team that rebuilt the system from scratch on QNX, with an 8-inch capacitive touchscreen that responds like a phone.",
+            "Set the principles the team designed to: a home screen of three zones (navigation, audio, phone) that expand on touch; kept physical knobs for volume and climate; shortened voice commands to natural phrases; added over-the-air updates.",
+            "Established Ford's first automotive design system and shaped a 10-year EV and infotainment roadmap with product leadership.",
             "The SYNC 3 home-screen layout is still in Ford vehicles today.",
         ],
         "results": [("Best", "on the market, per Forbes"), ("DT", "Recommended Product, Digital Trends"), ("1st", "automotive design system at Ford")],
