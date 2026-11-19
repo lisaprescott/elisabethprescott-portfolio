@@ -48,7 +48,7 @@ PROJECTS = [
         "slug": "eventbrite-rebrand",
         "title": "Eventbrite Rebrand",
         "eyebrow": "Eventbrite · Brand · 2025",
-        "dek": "The most significant brand refresh in Eventbrite's history, repositioning the company from ticketing infrastructure to a destination for live experiences.",
+        "dek": "The most significant brand refresh in Eventbrite's history, taking the company from ticketing to a place to find things to do with friends.",
         "facts": [("Role", "SVP Design"), ("Team", "In-house brand team with BUCK"), ("Launched", "March 2025"), ("Recognition", "Fast Company, 2025")],
         "hero": "../images/eventbrite-rebrand.png",
         "problem": [
