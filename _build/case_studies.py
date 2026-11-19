@@ -160,6 +160,7 @@ PROJECTS = [
             "Led the design team for Maps and Wishlists within Workshop, taking the work from concept through three design patents to a global release, in partnership with product and engineering leadership.",
         ],
         "gallery": [
+            ("../images/airbnb-wishlist.png", "Save to a trip, set dates, add a note: Wishlists as a planning tool"),
             ("../images/cs/airbnb-listing-screens.jpg", "Listing and trip-planning screens: price breakdown, room details and a shared plan"),
         ],
         "sources": [
@@ -335,6 +336,7 @@ PROJECTS = [
             "Field research with Nokia's design team in San Francisco and six cities worldwide to watch how people play games on phones.",
             "The key finding was that people mainly want to play against friends and know the skill of their opponents. The service was designed around it: see what your friends own and whether they are online, skill-based matchmaking, and try before you buy.",
         ],
+        "extra": "nokia.html",
         "results": [("6+", "cities of field research"), ("EA", "and other major publishers at launch")],
         "leadership": [
             "Led UX within IDEO's Storytelling Group, turning research into the service concept and interface.",
@@ -450,7 +452,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=21">
+<link rel="stylesheet" href="../css/styles.css?v=22">
 </head>
 <body class="cs-page">
 

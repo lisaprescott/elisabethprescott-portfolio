@@ -732,3 +732,14 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 .cs-figure--row figcaption { margin-top: 10px; }
 @media (max-width: 700px) { .cs-figure--row { grid-template-columns: 1fr; } }
 .cs-figure img[src*="airbnb-categoryList"] { max-width: 720px !important; }
+
+/* Nokia: research → service map */
+.ngage-map { display: grid; gap: 12px; }
+.ngage-map__row { display: grid; grid-template-columns: 1fr auto 1.4fr; gap: 16px; align-items: stretch; }
+.ngage-map__finding, .ngage-map__feature { padding: 22px 24px; font-size: 18px; line-height: 1.45; }
+.ngage-map__finding { background: #fff; border: 1px solid var(--border); font-family: 'Tiempos', serif; font-weight: 700; font-size: 22px; line-height: 1.25; }
+.ngage-map__feature { background: #0e0d0b; color: #f4f1ea; }
+.ngage-map span { display: block; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #a89f8f; margin-bottom: 10px; }
+.ngage-map__feature span { color: #d9534f; }
+.ngage-map__arrow { align-self: center; color: var(--accent); font-size: 24px; }
+@media (max-width: 800px) { .ngage-map__row { grid-template-columns: 1fr; } .ngage-map__arrow { transform: rotate(90deg); justify-self: center; } }
