@@ -182,7 +182,7 @@ PROJECTS = [
         "leadership": [
             "Led the UX team for the ES8 HMI program from zero to production, working across NIO's studios and with vehicle engineering.",
         ],
-        "gallery": [("../images/cs/nio-hmi-home.png", "Centre-display concept, June 2018: navigation as the anchor, media and climate one gesture away")],
+        "gallery": [("../media/nio-nomi.mp4", "NOMI, the ES8's in-car assistant, waking on the dash above the 11.3-inch centre display"), ("../images/cs/nio-hmi-home.png", "Centre-display concept, June 2018: navigation as the anchor, media and climate one gesture away")],
         "sources": [
             ("iF Design: Infotainment System HMI for NIO ES8/ES6", "https://ifdesign.com/en/winner-ranking/project/infotainment-system-hmi-design-for-nio-es8es6/282405"),
             ("Electric Cars Report: NIO OS wins iF Design Award 2020", "https://electriccarsreport.com/2020/05/nio-os-and-nio-life-concept-scooter-win-if-design-award-2020/"),
@@ -398,6 +398,8 @@ def page(p, prev_p, next_p):
             imgs = "".join(f'<div><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></div>' for src, alt in item)
             return f'  <figure class="cs-figure cs-figure--pair">{imgs}</figure>'
         src, alt = item
+        if src.endswith(".mp4"):
+            return f'  <figure class="cs-figure"><video src="{src}" autoplay muted loop playsinline preload="metadata" aria-label="{E(alt)}"></video><figcaption>{E(alt)}</figcaption></figure>'
         return f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></figure>'
     gallery = "\n".join(fig(g) for g in p["gallery"])
     extra_name = {"EVENTBRITE_BRAND": "eventbrite_brand.html"}.get(p.get("extra"), p.get("extra") or "")

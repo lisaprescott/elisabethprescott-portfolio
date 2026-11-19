@@ -721,3 +721,4 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 .otto-shuffle img:nth-child(4) { animation-delay: 9s; }
 @keyframes otto-cycle { 0% { opacity: 0; transform: translateY(8px); } 4% { opacity: 1; transform: none; } 25% { opacity: 1; } 29% { opacity: 0; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .otto-shuffle img { animation: none; } .otto-shuffle img:first-child { opacity: 1; } }
+.cs-figure video { display: block; width: 100%; height: auto; background: #0e0d0b; }
