@@ -47,27 +47,26 @@ PROJECTS = [
     {
         "slug": "eventbrite-rebrand",
         "title": "Eventbrite Rebrand",
-        "eyebrow": "Eventbrite · Brand · 2025",
+        "eyebrow": "Eventbrite · Brand · 2024–2025",
         "dek": "The most significant brand refresh in Eventbrite's history, taking the company from ticketing to a place to find things to do with friends.",
-        "facts": [("Role", "SVP Design"), ("Team", "In-house brand team with BUCK"), ("Launched", "March 2025"), ("Recognition", "Fast Company, 2025")],
+        "facts": [("Role", "SVP Design, rebrand lead"), ("Partners", "CMO and CPO"), ("Timeline", "May 2024 to launch in March 2025"), ("Recognition", "Fast Company, 2025")],
         "hero": "../images/eventbrite-rebrand.png",
         "problem": [
-            "Eventbrite was known as a ticketing logo: infrastructure that sat behind other people's events. As the company moved to a consumer marketplace, the brand had to make people want to go out, not just check in.",
+            "Eventbrite was known as a logo on a ticket stub: infrastructure that sat behind other people's events, built around one-time ticket sales. As the company moved to a consumer marketplace, the brand had to make people want to go out, not just check in.",
+            "The company had a renewed mission, to bring people together through live experiences, and a new role for product: to maximize the enjoyment of gathering. The brand had to carry both.",
         ],
         "approach": [
-            "Partnered with BUCK on a full visual and verbal identity: a new monogram, The Path, built from three interconnected parts to signal momentum from discovery to the event itself; a brighter Brite Orange with highlighter accents; candid photography of real communities; and a tone of voice defined as boldly optimistic, unexpectedly eccentric, totally tuned in and empathetically human.",
-            "Built an Amplified Brand toolkit for marketing (Header Highlighter type, Expressive Paths and Energy Auras) so campaigns, social, email and out-of-home could flex without breaking the system.",
-            "Launched with the Get Into It campaign and the redesigned app as one moment.",
+            "Ran the program from the pitch in May 2024 through strategy, logo, visual identity and tone-of-voice workshops in June, eight rounds of creative review through the summer, and an internal brand roadshow before launch.",
+            "Built one system for brand, marketing and product, then launched it with the Get Into It campaign and the redesigned app as a single moment.",
         ],
-        "results": [("+22%", "brand awareness"), ("1", "unified system across brand, marketing and product")],
+        "extra": "EVENTBRITE_BRAND",
+        "results": [("+22%", "brand awareness"), ("8", "rounds of creative review, June to July 2024"), ("1", "system across brand, marketing and product")],
         "leadership": [
-            "Led the program end to end with the CMO and CPO, owning the agency partnership, the in-house brand team and the translation of the identity into the product.",
-            "Credited as SVP, Design in BUCK's published case study alongside the VP Brand, Design Program Director and Principal Designer on the Eventbrite team.",
+            "Led the rebrand end to end, from the first pitch to launch, partnering with the CMO and CPO and directing the VP Brand, the in-house brand and design team, and design program management.",
+            "Held one bar across brand and product, so the identity, the app and the launch campaign shipped as one story.",
         ],
-        "gallery": [("../images/cs/eventbrite-amplified-brand.jpg", "Amplified brand techniques")],
+        "gallery": [],
         "sources": [
-            ("BUCK: Eventbrite rebrand (credits)", "https://buck.co/work/eventbrite"),
-            ("It's Nice That: BUCK × Eventbrite", "https://www.itsnicethat.com/articles/buck-eventbrite-graphic-design-project-100325"),
             ("Creative Bloq: Eventbrite's vibrant rebrand", "https://creativebloq.com/design/branding/eventbrites-vibrant-rebrand-revives-the-magic-of-live-experiences"),
             ("Eventbrite: brand refresh announcement", "https://www.eventbrite.com/blog/?p=436270"),
         ],
@@ -265,12 +264,18 @@ PROJECTS = [
             "Rebuilt the system from scratch on QNX with an 8-inch capacitive touchscreen that responds like a phone.",
             "Simplified the home screen to three zones (navigation, audio, phone) that expand on touch; kept physical knobs for volume and climate; shortened voice commands to natural phrases; added over-the-air updates.",
             "Created Ford's first automotive design system and a 10-year EV and infotainment roadmap.",
+            "The SYNC 3 home-screen layout is still in Ford vehicles today.",
         ],
         "results": [("Best", "on the market, per Forbes"), ("DT", "Recommended Product, Digital Trends"), ("1st", "automotive design system at Ford")],
         "leadership": [
             "Built the product design organization from the ground up, hiring and structuring the team that shipped SYNC 3 across Ford and Lincoln.",
         ],
-        "gallery": [],
+        "gallery": [
+            [("../images/cs/ford-myford-touch-layout.svg", "Before: MyFord Touch, four colour-coded corners with small targets and deep menus (diagram)"), ("../images/cs/ford-sg-p49.jpg", "After: SYNC 3 home screen, navigation, audio and phone in three zones above a persistent bar, a layout still in Ford vehicles today")],
+            ("../images/cs/ford-day-night.jpg", "Daytime and nighttime themes: the same screen tuned for sun washout and night glare"),
+            [("../images/cs/ford-sg-p52.jpg", "HD Radio source screen"), ("../images/cs/ford-sg-p57.jpg", "Destination entry")],
+            ("../images/cs/ford-8in-to-10in.jpg", "Scaling the 8-inch design (left) to the 10.1-inch display: the wireframe stage before final assets, January 2016"),
+        ],
         "sources": [
             ("Digital Trends: Ford SYNC 3 review", "https://digitaltrends.com/cars/ford-sync-3-review"),
             ("Fox Business: Ford reboots touch-screen system", "https://www.foxbusiness.com/features/ford-reboots-touch-screen-system-with-new-sync-3"),
@@ -319,7 +324,7 @@ PROJECTS = [
         "leadership": [
             "Art directed within the Imaginary Forces team. That foundation in motion, narrative and systems thinking runs through every product role since, alongside title work on Minority Report, Panic Room and Band of Brothers.",
         ],
-        "gallery": [],
+        "gallery": [("../images/cs/spiderman-storyboard.jpg", "Original storyboard for the main title sequence, from the web and the eye to the Marvel card and the cast names")],
         "sources": [
             ("Prologue: Spider-Man", "https://prologue.com/?p=3941"),
             ("Art of the Title: Kyle Cooper", "https://www.artofthetitle.com/designer/kyle-cooper"),
@@ -372,11 +377,12 @@ def page(p, prev_p, next_p):
   </section>'''
     def fig(item):
         if isinstance(item, list):  # side-by-side pair
-            imgs = "".join(f'<img src="{src}" alt="{E(alt)}" loading="lazy">' for src, alt in item)
+            imgs = "".join(f'<div><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></div>' for src, alt in item)
             return f'  <figure class="cs-figure cs-figure--pair">{imgs}</figure>'
         src, alt = item
-        return f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"></figure>'
+        return f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></figure>'
     gallery = "\n".join(fig(g) for g in p["gallery"])
+    extra = (pathlib.Path(__file__).parent / "eventbrite_brand.html").read_text() if p.get("extra") == "EVENTBRITE_BRAND" else ""
     sources = ""
     if p["sources"]:
         items = "\n".join(f'      <li><a href="{E(u)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in p["sources"])
@@ -396,7 +402,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=13">
+<link rel="stylesheet" href="../css/styles.css?v=15">
 </head>
 <body class="cs-page">
 
@@ -433,6 +439,8 @@ def page(p, prev_p, next_p):
 {paras(p["approach"])}
     </div>
   </section>
+
+{extra}
 
 {results}
 
