@@ -517,7 +517,7 @@ a:hover { opacity: .85; }
 
 .cs-hero { background: #0e0d0b; }
 .cs-hero img { display: block; width: 100%; height: auto; max-height: 86vh; object-fit: cover; }
-.cs-hero--phones { display: flex; justify-content: center; gap: 3vw; padding: 6vh 4vw 0; background: linear-gradient(180deg, #fff 0%, #efeae1 100%); overflow: hidden; }
+.cs-hero--phones { display: flex; justify-content: center; gap: 3vw; padding: 6vh 4vw 0; background: var(--bg); overflow: hidden; }
 .cs-hero--phones img { width: auto; height: 70vh; max-width: 30%; object-fit: contain; object-position: top; }
 
 .cs-section { display: grid; grid-template-columns: 200px minmax(0, 760px); gap: 40px; max-width: 1180px; padding: 72px var(--gutter) 0; }
@@ -581,3 +581,8 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 
 /* Portrait UI frames: show at native 2x size, centred */
 .cs-figure img[src*="nio-hmi"] { max-width: 600px; margin: 0 auto; display: block; }
+
+/* Phone screenshots ship on white: blend the white into the page background */
+.cs-hero--phones img,
+.project-band__image--phones img,
+.cs-figure img[src*="press/airbnb"] { mix-blend-mode: multiply; }
