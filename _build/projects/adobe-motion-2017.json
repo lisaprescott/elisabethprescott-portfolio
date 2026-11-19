@@ -1,0 +1,24 @@
+{
+  "slug": "adobe-motion-2017",
+  "title": "Adobe XD × Adobe Sensei",
+  "eyebrow": "agency:collective · Motion · 2017",
+  "category": "Motion",
+  "year": 2017,
+  "dek": "Motion design styleframes and title animation for two Adobe pieces in 2017: a sequence built around Adobe XD and a title package for Adobe Sensei.",
+  "facts": [["Role", "Creative Director, agency:collective"], ["Client", "Adobe"], ["Year", "2017"], ["Scope", "Styleframes, title animation, motion design"]],
+  "card": "../images/cs/adobe-motion-2017-1.jpg",
+  "hero": "../images/cs/adobe-motion-2017-1.jpg",
+  "problem": ["The files cover motion work for two Adobe products: a sequence featuring the Adobe XD mark and drawing tools, and title animation for Adobe Sensei's capability names."],
+  "approach": [
+    "For the XD piece, the studio built styleframes on a black field framed by a glowing blue ring. Inside the ring, interface moments play out step by step: an ellipse being sized with a live dimensions dialog, a light bulb drawn with the pen tool as a vector outline, then the same bulb resolved as a rendered object. Supporting frames explore kinetic type, including a sliced \"CUT\" wordmark.",
+    "For Adobe Sensei, the work was a set of title options for the platform and its capability areas, including Intelligent Assistant, Computational Creativity, Content Intelligence, Experience Intelligence and Open Framework, with a write-on treatment set against a dark blue field."
+  ],
+  "results": [],
+  "leadership": ["Directed the studio's motion design work for both Adobe pieces, from styleframes through animated title options."],
+  "gallery": [
+    [["../images/cs/adobe-motion-2017-2.jpg", "Pen-tool vector outline of a light bulb"], ["../images/cs/adobe-motion-2017-3.jpg", "Rendered light bulb inside the ring"]],
+    ["../images/cs/adobe-motion-2017-4.jpg", "Ellipse tool with live dimensions dialog"],
+    [["../images/cs/adobe-motion-2017-5.jpg", "Kinetic type frame: sliced \"CUT\""], ["../images/cs/adobe-motion-2017-6.jpg", "Adobe Sensei styleframe, option C: Intelligent Assistant title"]]
+  ],
+  "sources": []
+}

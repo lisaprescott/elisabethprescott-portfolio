@@ -38,6 +38,8 @@ PROJECTS = [
         ],
         "gallery": [("../images/cs/eventbrite-app-blueprint.jpg", "Eventbrite app experience blueprint")],
         "sources": [
+            ("Eventbrite: Eventbrite welcomes Lisa Prescott as SVP of Design and Brand (Aug 29, 2023)", "https://www.eventbrite.com/blog/?p=408473"),
+            ("The Webby Awards 2026: Reimagining Eventbrite, Best User Experience nominee (credits Lisa Prescott, SVP Design)", "https://winners.webbyawards.com/2026/apps-software-immersive/app-excellence/best-user-experience/382209/reimagining-eventbrite-a-new-vision-for-discovery-and-connection"),
             ("Business Wire: Eventbrite's reimagined app (Mar 4, 2025)", "https://www.businesswire.com/news/home/20250304175630/en/Get-Into-It-Eventbrites-Reimagined-App-Makes-Discovering-Your-Next-Favorite-Live-Experience-as-Enjoyable-as-Being-There"),
             ("Instrument: Eventbrite app case study", "https://www.instrument.com/work/eventbrite-app"),
             ("Fast Company: Eventbrite app redesign", "https://www.fastcompany.com/91289655/eventbrite-app-redesign-event-discovery"),
@@ -67,6 +69,7 @@ PROJECTS = [
         ],
         "gallery": [],
         "sources": [
+            ("Eventbrite: Eventbrite welcomes Lisa Prescott as SVP of Design and Brand (Aug 29, 2023)", "https://www.eventbrite.com/blog/?p=408473"),
             ("Creative Bloq: Eventbrite's vibrant rebrand", "https://creativebloq.com/design/branding/eventbrites-vibrant-rebrand-revives-the-magic-of-live-experiences"),
             ("Eventbrite: brand refresh announcement", "https://www.eventbrite.com/blog/?p=436270"),
         ],
@@ -92,6 +95,7 @@ PROJECTS = [
         ],
         "gallery": [],
         "sources": [
+            ("Eventbrite: Eventbrite welcomes Lisa Prescott as SVP of Design and Brand (Aug 29, 2023)", "https://www.eventbrite.com/blog/?p=408473"),
             ("TechCrunch: Eventbrite integrates GPT capabilities (May 2023)", "https://techcrunch.com/2023/05/09/eventbrite-integrates-gpt-capabilites-into-platform-to-aid-the-event-planning-process/"),
         ],
     },
@@ -117,6 +121,8 @@ PROJECTS = [
         ],
         "gallery": [("../images/cs/airbnb-categoryList.png", "Airbnb Categories list")],
         "sources": [
+            ("US Design Patent D1054441, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1054441"),
+            ("US Design Patent D1056932, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1056932"),
             ("Airbnb Newsroom: 2022 Summer Release", "https://news.airbnb.com/2022-summer-release/"),
             ("Uproxx: biggest change to the platform in a decade", "https://uproxx.com/life/airbnb-summer-release-2022"),
             ("The Points Guy: Airbnb Categories and AirCover", "https://thepointsguy.com/news/airbnb-new-categories-aircover"),
@@ -145,6 +151,8 @@ PROJECTS = [
         ],
         "gallery": [],
         "sources": [
+            ("US Design Patent D1054441, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1054441"),
+            ("US Design Patent D1056932, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1056932"),
             ("Airbnb Newsroom: 2024 Summer Release", "https://news.airbnb.com/airbnb-2024-summer-release/"),
             ("Sunset: Airbnb just made planning group trips easier", "https://www.sunset.com/travel/airbnb-group-trip-features"),
             ("LinkedIn: patents", "https://www.linkedin.com/in/elisabethprescott/details/patents/"),
@@ -407,7 +415,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=15">
+<link rel="stylesheet" href="../css/styles.css?v=16">
 </head>
 <body class="cs-page">
 
@@ -477,8 +485,44 @@ def page(p, prev_p, next_p):
 '''
 
 
+def load_more():
+    """Archive projects: one JSON spec per project in _build/projects/."""
+    import json
+    more = []
+    for f in sorted((pathlib.Path(__file__).parent / "projects").glob("*.json")):
+        d = json.loads(f.read_text())
+        d["facts"] = [tuple(x) for x in d.get("facts", [])]
+        d["results"] = [tuple(x) for x in d.get("results", [])]
+        d["sources"] = [tuple(x) for x in d.get("sources", [])]
+        d["gallery"] = [tuple(g) if isinstance(g[0], str) else [tuple(x) for x in g] for g in d.get("gallery", [])]
+        for k in ("problem", "approach", "leadership"):
+            d.setdefault(k, [])
+        more.append(d)
+    more.sort(key=lambda d: (-int(d.get("year", 0)), d["title"]))
+    return more
+
+
+def write_index_grid(more):
+    """Fill the More work grid on the home page between its markers."""
+    index = OUT.parent / "index.html"
+    html_ = index.read_text()
+    a, b = "<!-- MORE-WORK:START -->", "<!-- MORE-WORK:END -->"
+    if a not in html_:
+        return
+    cards = "\n".join(
+        f'    <a href="casestudy/{E(d["slug"])}.html" class="work-card" data-cat="{E(d.get("category", ""))}">'
+        f'<div class="work-card__img" style="background-image:url({E(d["card"].replace("../", ""))})"></div>'
+        f'<div class="work-card__meta">{E(d["eyebrow"])}</div><div class="work-card__title">{E(d["title"])}</div></a>'
+        for d in more)
+    start, end = html_.index(a) + len(a), html_.index(b)
+    index.write_text(html_[:start] + "\n" + cards + "\n    " + html_[end:])
+
+
 def main():
     OUT.mkdir(exist_ok=True)
+    more = load_more()
+    PROJECTS.extend(more)
+    write_index_grid(more)
     n = len(PROJECTS)
     for i, p in enumerate(PROJECTS):
         (OUT / f'{p["slug"]}.html').write_text(page(p, PROJECTS[i - 1], PROJECTS[(i + 1) % n]))

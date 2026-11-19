@@ -1,0 +1,25 @@
+{
+  "slug": "hp-brand-entrance",
+  "title": "HP Brand Entrance Video",
+  "eyebrow": "agency:collective · Motion · 2018",
+  "category": "Motion",
+  "year": 2018,
+  "dek": "Styleframes in three visual directions for an HP brand entrance video.",
+  "facts": [["Role", "Creative Director, agency:collective"], ["Client", "HP"], ["Year", "2018"], ["Scope", "Styleframes, motion direction"]],
+  "card": "../images/cs/hp-brand-entrance-1.jpg",
+  "hero": "../images/cs/hp-brand-entrance-1.jpg",
+  "problem": ["HP needed a brand entrance video. The March 2018 styleframe presentation set out three possible visual directions for it."],
+  "approach": [
+    "Version A, Shape Reveal Dots, builds scenes from clusters of photographic dots that resolve into HP devices and on-screen messaging.",
+    "Version B, Pop Color, uses concentric rings of saturated color that open onto HP printers and the line \"Driven by a singular mission.\"",
+    "Version C, Dynamic Reveal, uses triangular cut-outs and layered photography to reveal people, devices and the HP mark."
+  ],
+  "results": [],
+  "leadership": ["Directed the creative for the styleframe presentation, setting out and presenting three alternative directions for the video."],
+  "gallery": [
+    ["../images/cs/hp-brand-entrance-2.jpg", "Version B, Pop Color: frames 001–004"],
+    ["../images/cs/hp-brand-entrance-3.jpg", "Version A, Shape Reveal Dots: frames 001–003"],
+    ["../images/cs/hp-brand-entrance-4.jpg", "Version C, Dynamic Reveal: frames 001–006"]
+  ],
+  "sources": []
+}

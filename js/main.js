@@ -29,7 +29,7 @@ function initPhraseRotation() {
 
 function initFilterChips() {
   const chips = document.querySelectorAll('.chip');
-  const bands = document.querySelectorAll('.project-band');
+  const bands = document.querySelectorAll('.project-band, .work-card');
   const countEl = document.getElementById('count');
   const total = bands.length;
 
@@ -41,7 +41,7 @@ function initFilterChips() {
       const cat = chip.dataset.cat;
       let visibleCount = 0;
       bands.forEach(band => {
-        const match = cat === 'All' || band.dataset.cat.split(' ').includes(cat);
+        const match = cat === 'All' || (band.dataset.cat || '').split(' ').includes(cat);
         band.style.display = match ? '' : 'none';
         if (match) visibleCount++;
       });
