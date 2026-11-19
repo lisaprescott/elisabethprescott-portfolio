@@ -582,7 +582,7 @@ a:hover { opacity: .85; }
 
 /* Full-page scroll: each project snaps to fill the screen under the sticky header */
 html { scroll-snap-type: y mandatory; scroll-padding-top: var(--stack-top); }
-.masthead, .project-band, .about, .contact { scroll-snap-align: start; }
+.masthead, .project-band, .more-work, .about, .contact { scroll-snap-align: start; }
 .project-band { scroll-snap-stop: always; }
 body.resume-page, body.cs-page { scroll-snap-type: none; }
 html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
