@@ -126,6 +126,7 @@ PROJECTS = [
         ],
         "gallery": [
             ("../images/press/airbnb-categoryList.png", "The category bar and listings at launch"),
+            ("../images/cs/airbnb-cat-screen.jpg", "A category on web: the Design category, with the category bar above the grid"),
             ("../images/cs/airbnb-cat-homes-1.jpg", "Homes grouped by what makes them special: one category's lead photos, curated by hand"),
             ("../images/cs/airbnb-cat-homes-2.jpg", "A second category grid, showing the range a single category spans"),
         ],
@@ -186,9 +187,17 @@ PROJECTS = [
         ],
         "results": [("97%", "customer satisfaction"), ("+35%", "ES8 sales contribution"), ("iF", "Design Award for the ES8/ES6 infotainment HMI")],
         "leadership": [
-            "Led the UX team for the ES8 HMI program from zero to production, working across NIO's studios and with vehicle engineering.",
+            "Led the UX team for the ES8 HMI program from zero to production, working across NIO's studios and with vehicle engineering: building the team in spring 2018, shipping the 1.0 visual update for the ES8, then the 2.0 UX and visual system for the ES6 by December 2018.",
+            "Kept a CEO-level product moving fast: 6 CEO reviews, 24 executive reviews and more than 440 cross-functional check-ins from start to launch, with heads of product, software engineering and brand.",
         ],
-        "gallery": [("../media/nio-nomi.mp4", "NOMI, the ES8's in-car assistant, waking on the dash above the 11.3-inch centre display"), ("../images/cs/nio-hmi-home.png", "Centre-display concept, June 2018: navigation as the anchor, media and climate one gesture away")],
+        "gallery": [
+            ("../media/nio-nomi.mp4", "NOMI, the ES8's in-car assistant, waking on the dash above the 11.3-inch centre display"),
+            ("../images/cs/nio-cockpit.jpg", "The ES8 cockpit: cluster, centre display and NOMI designed as one system"),
+            [("../images/cs/nio-icons.jpg", "NOMI's expression set"), ("../images/cs/nio-colour-study.jpg", "Colour study sampled from sky and sea at dusk")],
+            [("../images/cs/nio-kit-colour.jpg", "NIO GUI design guideline: colour"), ("../images/cs/nio-kit-type.jpg", "NIO GUI design guideline: typography")],
+            ("../images/cs/nio-kit-icons.jpg", "NIO GUI design guideline: the icon system"),
+            [("../images/cs/nio-hmi-home.png", "Centre-display concept, June 2018: navigation as the anchor, media and climate one gesture away"), ("../images/cs/nio-os-screens.jpg", "Entertainment screen flows")],
+        ],
         "sources": [
             ("iF Design: Infotainment System HMI for NIO ES8/ES6", "https://ifdesign.com/en/winner-ranking/project/infotainment-system-hmi-design-for-nio-es8es6/282405"),
             ("Electric Cars Report: NIO OS wins iF Design Award 2020", "https://electriccarsreport.com/2020/05/nio-os-and-nio-life-concept-scooter-win-if-design-award-2020/"),
@@ -244,7 +253,10 @@ PROJECTS = [
         "leadership": [
             "Led the experience design and art direction within the Spatialand studio.",
         ],
-        "gallery": [],
+        "gallery": [
+            ("../images/cs/spatia-world-movement.jpg", "Movement world render: gears, spheres and dial markings at architectural scale"),
+            ("../images/cs/spatia-world-movement-2.jpg", "A second pass on the movement world, lit for the headset"),
+        ],
         "sources": [],
     },
     {
