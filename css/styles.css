@@ -581,8 +581,3 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 
 /* Portrait UI frames: show at native 2x size, centred */
 .cs-figure img[src*="nio-hmi"] { max-width: 600px; margin: 0 auto; display: block; }
-
-/* Phone screenshots ship on white: blend the white into the page background */
-.cs-hero--phones img,
-.project-band__image--phones img,
-.cs-figure img[src*="press/airbnb"] { mix-blend-mode: multiply; }

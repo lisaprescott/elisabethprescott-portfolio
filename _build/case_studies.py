@@ -19,7 +19,7 @@ PROJECTS = [
         "slug": "eventbrite-app",
         "title": "Eventbrite App",
         "eyebrow": "Eventbrite · Product · 2025",
-        "dek": "Rebuilt Eventbrite's consumer app around discovery, turning a ticket wallet into a reason to open the app.",
+        "dek": "Rebuilt Eventbrite's consumer app as part of the company's full rebrand, taking it from ticketing to a place to find things to do with friends.",
         "facts": [("Role", "SVP Design"), ("Org", "120-person design org, reporting to the CPO"), ("Shipped", "March 2025, all markets"), ("Partners", "Instrument")],
         "hero": "../images/eventbrite-app.png",
         "problem": [
@@ -102,8 +102,8 @@ PROJECTS = [
         "eyebrow": "Airbnb · Product · 2022",
         "dek": "Contributed to the 2022 Summer Release, described by Brian Chesky as the biggest change to Airbnb in a decade.",
         "facts": [("Role", "Senior Director, Product Design"), ("Team", "Workshop, Airbnb's 0→1 innovation team"), ("Shipped", "May 2022"), ("Scale", "220+ countries and regions")],
-        "hero": "../images/press/airbnb-OMG-list_en-1.jpg",
-        "hero_phones": ["../images/press/airbnb-Press_Pre_Brief_Design_List.jpg", "../images/press/airbnb-OMG-list_en-1.jpg", "../images/press/airbnb-Press-Categories-Camping.jpg"],
+        "hero": "../images/press/airbnb-OMG-list_en-1.png",
+        "hero_phones": ["../images/press/airbnb-Press_Pre_Brief_Design_List.png", "../images/press/airbnb-OMG-list_en-1.png", "../images/press/airbnb-Press-Categories-Camping.png"],
         "problem": [
             "Travel search had worked the same way for 25 years: type a destination, pick dates. Most people can name only a few dozen destinations, yet Airbnb had listings in roughly 100,000 towns and cities. Unique homes were invisible unless you already knew where to look.",
         ],
@@ -129,8 +129,8 @@ PROJECTS = [
         "eyebrow": "Airbnb · Product · 2021–2023",
         "dek": "Turned Wishlists from a save button into the foundation of group trip planning, and redesigned Maps as a destination-first discovery surface.",
         "facts": [("Role", "Senior Director, Product Design"), ("Team", "Workshop, Airbnb's 0→1 innovation team"), ("Shipped", "2024 Summer Release"), ("Patents", "3 US design patents")],
-        "hero": "../images/press/airbnb-Joined-Wishlist-en-US.jpg",
-        "hero_phones": ["../images/press/airbnb-LPM1-_-Trip-invite.jpg", "../images/press/airbnb-Joined-Wishlist-en-US.jpg", "../images/press/airbnb-Guest-thread-en-US.jpg"],
+        "hero": "../images/press/airbnb-Joined-Wishlist-en-US.png",
+        "hero_phones": ["../images/press/airbnb-LPM1-_-Trip-invite.png", "../images/press/airbnb-Joined-Wishlist-en-US.png", "../images/press/airbnb-Guest-thread-en-US.png"],
         "problem": [
             "More than 80% of Airbnb bookings are group trips, but the app was built for one person. Planning happened in group chats and screenshots, outside Airbnb, and Wishlists were a private save list.",
             "Maps, the platform's largest discovery surface, showed price pins rather than helping guests understand a place.",
@@ -393,7 +393,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=11">
+<link rel="stylesheet" href="../css/styles.css?v=12">
 </head>
 <body class="cs-page">
 
