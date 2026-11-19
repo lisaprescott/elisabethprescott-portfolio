@@ -120,11 +120,15 @@ PROJECTS = [
             "Worked with product, engineering and data science leads to pair machine learning across titles, descriptions, photo captions and reviews with human curation of the lead photo for every listing in every category.",
             "Pushed for the map to respond to the category, zooming to show where those homes are, so browsing became a way to discover destinations, not just homes.",
         ],
-        "results": [("180M", "views in the first weeks"), ("4M+", "homes organized into 55+ categories"), ("Record", "daily visitors after launch")],
+        "results": [("7 → 1", "design directions narrowed to one in two months"), ("60", "categories, each with a new icon"), ("57", "people across design, product, research, writing and marketing"), ("24", "cross-functional design reviews, plus 120 peer reviews")],
         "leadership": [
             "Senior Director in Workshop, Airbnb's internal 0→1 team, leading designers across the categories and maps work on a marketplace serving 220+ countries and $17B in gross booking value in Q2 2022.",
         ],
-        "gallery": [("../images/cs/airbnb-categoryList.png", "Airbnb Categories list")],
+        "gallery": [
+            ("../images/press/airbnb-categoryList.png", "The category bar and listings at launch"),
+            ("../images/cs/airbnb-cat-homes-1.jpg", "Homes grouped by what makes them special: one category's lead photos, curated by hand"),
+            ("../images/cs/airbnb-cat-homes-2.jpg", "A second category grid, showing the range a single category spans"),
+        ],
         "sources": [
             ("US Design Patent D1054441, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1054441"),
             ("US Design Patent D1056932, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1056932"),
@@ -154,7 +158,9 @@ PROJECTS = [
         "leadership": [
             "Led the design team for Maps and Wishlists within Workshop, taking the work from concept through three design patents to a global release, in partnership with product and engineering leadership.",
         ],
-        "gallery": [],
+        "gallery": [
+            ("../images/cs/airbnb-listing-screens.jpg", "Listing and trip-planning screens: price breakdown, room details and a shared plan"),
+        ],
         "sources": [
             ("US Design Patent D1054441, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1054441"),
             ("US Design Patent D1056932, Airbnb (inventors include Lisa Prescott)", "https://patents.justia.com/patent/D1056932"),
@@ -286,12 +292,15 @@ PROJECTS = [
         ],
         "results": [("Best", "on the market, per Forbes"), ("DT", "Recommended Product, Digital Trends"), ("1st", "automotive design system at Ford")],
         "leadership": [
-            "Built the product design organization from the ground up, hiring and structuring the team that shipped SYNC 3 across Ford and Lincoln.",
+            "Built the product design organization from the ground up and led a team of about 27 across UX design (12), prototyping (3), visual design (3), audio (2), content (2), research (2) and program support (3), partnering with 12 product and 9 engineering leads.",
+            "Ran the program from scoping, alignment and a driver-safety audit through the SYNC 3 visual language, wireframes and final assets: roughly six months to align and ten more to lock the design.",
         ],
         "gallery": [
-            [("../images/cs/ford-myford-touch-layout.svg", "Before: MyFord Touch, four colour-coded corners with small targets and deep menus (diagram)"), ("../images/cs/ford-sg-p49.jpg", "After: SYNC 3 home screen, navigation, audio and phone in three zones above a persistent bar, a layout still in Ford vehicles today")],
-            ("../images/cs/ford-day-night.jpg", "Daytime and nighttime themes: the same screen tuned for sun washout and night glare"),
-            [("../images/cs/ford-sg-p52.jpg", "HD Radio source screen"), ("../images/cs/ford-sg-p57.jpg", "Destination entry")],
+            [("../images/cs/ford-myford-touch-real.jpg", "Before: MyFord Touch. Four colour-coded corners (phone, navigation, entertainment, climate) with small targets and deep menus"), ("../images/cs/ford-sg-p49.jpg", "After: SYNC 3. Navigation, audio and phone in three zones above a persistent bar, a layout still in Ford vehicles today")],
+            [("../images/cs/ford-daynight-destination.jpg", "Day and night themes, tuned for sun washout and night glare: set a destination"), ("../images/cs/ford-daynight-clock.jpg", "Clock settings, night and day")],
+            [("../images/cs/ford-daynight-bluetooth.jpg", "Bluetooth devices, night and day"), ("../images/cs/ford-daynight-keyboard.jpg", "On-screen keyboard, night and day")],
+            ("../images/cs/ford-cluster-gauges.jpg", "Instrument cluster gauge studies"),
+            ("../images/cs/ford-nav-type.jpg", "Navigation type study: turn instructions at each size and weight in the system"),
             ("../images/cs/ford-8in-to-10in.jpg", "Scaling the 8-inch design (left) to the 10.1-inch display: the wireframe stage before final assets, January 2016"),
         ],
         "sources": [
@@ -393,14 +402,20 @@ def page(p, prev_p, next_p):
 {tiles}
     </div>
   </section>'''
-    def fig(item):
-        if isinstance(item, list):  # side-by-side pair
-            imgs = "".join(f'<div><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></div>' for src, alt in item)
-            return f'  <figure class="cs-figure cs-figure--pair">{imgs}</figure>'
-        src, alt = item
+    def media(src, alt, cap=True):
+        c = f'<figcaption>{E(alt)}</figcaption>' if cap else ''
         if src.endswith(".mp4"):
-            return f'  <figure class="cs-figure"><video src="{src}" autoplay muted loop playsinline preload="metadata" aria-label="{E(alt)}"></video><figcaption>{E(alt)}</figcaption></figure>'
-        return f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></figure>'
+            return f'<video src="{src}" autoplay muted loop playsinline preload="metadata" aria-label="{E(alt)}"></video>{c}'
+        w = native_width(src) if not src.endswith(".svg") else None
+        # never upscale: cap display width at the file's native width (shown at 1x)
+        style = f' style="max-width:{w}px"' if w and w < 2000 else ''
+        return f'<img src="{src}" alt="{E(alt)}" loading="lazy"{style}>{c}'
+    def fig(item):
+        if isinstance(item, list):  # row of 2-3 side by side
+            cells = "".join(f'<div>{media(src, alt)}</div>' for src, alt in item)
+            return f'  <figure class="cs-figure cs-figure--row" style="--n:{len(item)}">{cells}</figure>'
+        src, alt = item
+        return f'  <figure class="cs-figure">{media(src, alt)}</figure>'
     gallery = "\n".join(fig(g) for g in p["gallery"])
     extra_name = {"EVENTBRITE_BRAND": "eventbrite_brand.html"}.get(p.get("extra"), p.get("extra") or "")
     extra = (pathlib.Path(__file__).parent / extra_name).read_text() if extra_name.endswith(".html") else ""
@@ -423,7 +438,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20">
+<link rel="stylesheet" href="../css/styles.css?v=21">
 </head>
 <body class="cs-page">
 

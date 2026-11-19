@@ -722,3 +722,13 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 @keyframes otto-cycle { 0% { opacity: 0; transform: translateY(8px); } 4% { opacity: 1; transform: none; } 25% { opacity: 1; } 29% { opacity: 0; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .otto-shuffle img { animation: none; } .otto-shuffle img:first-child { opacity: 1; } }
 .cs-figure video { display: block; width: 100%; height: auto; background: #0e0d0b; }
+
+/* Gallery layout v2: never upscale, centred, tidy rows */
+.cs-figure > img, .cs-figure > video { margin-left: auto; margin-right: auto; }
+.cs-figure > figcaption { text-align: left; max-width: 46em; margin-left: auto; margin-right: auto; }
+.cs-figure--row { display: grid; grid-template-columns: repeat(var(--n, 2), minmax(0, 1fr)); gap: 16px; align-items: start; }
+.cs-figure--row > div { min-width: 0; }
+.cs-figure--row img, .cs-figure--row video { display: block; width: 100%; height: auto; margin: 0 auto; }
+.cs-figure--row figcaption { margin-top: 10px; }
+@media (max-width: 700px) { .cs-figure--row { grid-template-columns: 1fr; } }
+.cs-figure img[src*="airbnb-categoryList"] { max-width: 720px !important; }

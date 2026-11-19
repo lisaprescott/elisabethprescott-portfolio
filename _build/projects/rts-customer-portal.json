@@ -43,10 +43,6 @@
       "Operations dashboard: current containers and live collection tracking"
     ],
     [
-      "../images/cs/rts-customer-portal-3.jpg",
-      "Sustainability walkthrough: completed audit review"
-    ],
-    [
       [
         "../images/cs/rts-customer-portal-4.jpg",
         "Ratings portal landing"
@@ -57,8 +53,14 @@
       ]
     ],
     [
-      "../images/cs/rts-customer-portal-6.jpg",
-      "On-demand pick up, mobile route view"
+      [
+        "../images/cs/rts-customer-portal-3.jpg",
+        "Sustainability walkthrough: completed audit review"
+      ],
+      [
+        "../images/cs/rts-customer-portal-6.jpg",
+        "On-demand pick up, mobile route view"
+      ]
     ]
   ],
   "sources": []

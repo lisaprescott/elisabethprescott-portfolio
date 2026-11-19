@@ -38,8 +38,14 @@
   ],
   "gallery": [
     [
-      "../images/cs/thx-integra-2.jpg",
-      "Integra receiver frame with THX Certified line"
+      [
+        "../images/cs/thx-integra-2.jpg",
+        "Integra receiver frame with the THX Certified line"
+      ],
+      [
+        "../images/cs/thx-integra-5.jpg",
+        "Integra end card"
+      ]
     ],
     [
       [
@@ -50,10 +56,6 @@
         "../images/cs/thx-integra-3.jpg",
         "Home theater speaker diagram"
       ]
-    ],
-    [
-      "../images/cs/thx-integra-5.jpg",
-      "Integra end card"
     ]
   ],
   "sources": []
