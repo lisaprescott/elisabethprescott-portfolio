@@ -1,0 +1,23 @@
+{
+  "slug": "landor-bank-of-the-west-2018",
+  "title": "Bank of the West",
+  "eyebrow": "Landor · Motion · 2018",
+  "category": "Motion",
+  "year": 2018,
+  "dek": "A vertical animated ad for a Bank of the West (BNP Paribas) cash-back card, designed and animated in partnership with Landor.",
+  "facts": [["Role", "Creative Director, agency:collective"], ["Partner", "Landor"], ["Client", "Bank of the West"], ["Year", "2018"], ["Scope", "Storyboard frames, motion design"]],
+  "card": "../images/cs/landor-bank-of-the-west-2018-1.jpg",
+  "hero": "../images/cs/landor-bank-of-the-west-2018-1.jpg",
+  "problem": ["The files show a short portrait-format piece for Bank of the West: introduce the BNP Paribas mark, state a 3% cash-back offer on groceries, dining and gasoline, and close on a call to apply."],
+  "approach": [
+    "The piece is built entirely from the brand's green square. The BNP Paribas mark turns on its axis and becomes a flat green tile carrying the \"3% cash back on purchases\" message; darker and lighter green tiles for groceries, gasoline and dining then stack around it before collapsing back to a single square.",
+    "That square flips again to reveal \"Apply Inside\" and resolves on the mark. The studio worked it out as a 20-frame sequence in Illustrator before animating it in After Effects, keeping the Bank of the West lockup fixed in the corner throughout."
+  ],
+  "results": [],
+  "leadership": ["Directed agency:collective's design and animation of the piece for Landor."],
+  "gallery": [
+    ["../images/cs/landor-bank-of-the-west-2018-2.jpg", "Full category build: groceries, dining, gasoline around the 3% tile"],
+    ["../images/cs/landor-bank-of-the-west-2018-3.jpg", "Sequence frames, from mark to offer to call to action"]
+  ],
+  "sources": []
+}

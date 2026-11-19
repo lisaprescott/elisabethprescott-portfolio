@@ -1,0 +1,60 @@
+{
+  "slug": "early-work",
+  "title": "Early work",
+  "eyebrow": "Personal · Exploratory · Early work",
+  "category": "Exploratory",
+  "year": 2005,
+  "dek": "School projects in typeface design, posters and an early phone application concept.",
+  "facts": [
+    [
+      "Role",
+      "Designer"
+    ],
+    [
+      "Type",
+      "School projects"
+    ],
+    [
+      "Scope",
+      "Typeface design, posters, mobile app concept"
+    ]
+  ],
+  "card": "../images/cs/early-work-1.jpg",
+  "hero": "../images/cs/early-work-1.jpg",
+  "problem": [
+    "Self-directed school projects exploring type, print and interaction."
+  ],
+  "approach": [
+    "Typeface work includes Juicer, shown as packaging; Stutter, a twelve-point typeface designed as a visual representation of sound and combined with perspective drawing; and Container, a type specimen built from modular bits.",
+    "A layered memory poster combines illustration and graphic systems, and a phone application concept, Task Manager, visualises how time is spent across activities as a colour-coded clock."
+  ],
+  "results": [],
+  "leadership": [
+    "Her own work as a design student."
+  ],
+  "gallery": [
+    [
+      "../images/cs/early-work-2.jpg",
+      "Stutter typeface poster"
+    ],
+    [
+      "../images/cs/early-work-3.jpg",
+      "Container type specimen"
+    ],
+    [
+      "../images/cs/early-work-4.jpg",
+      "Memory poster"
+    ],
+    [
+      [
+        "../images/cs/early-work-5.jpg",
+        "Task Manager: averages by day, week, month, year"
+      ],
+      [
+        "../images/cs/early-work-6.jpg",
+        "Task Manager concept on phone"
+      ]
+    ]
+  ],
+  "sources": []
+}

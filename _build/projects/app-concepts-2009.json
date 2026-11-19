@@ -1,0 +1,56 @@
+{
+  "slug": "app-concepts-2009",
+  "title": "App concepts, 2009",
+  "eyebrow": "agency:collective · Product · 2009",
+  "category": "Product",
+  "year": 2009,
+  "dek": "Mobile app concepts developed in the studio: Forage, for sharing and picking produce from local trees and growers, and Pixit, a time-locked photo messaging app.",
+  "facts": [
+    [
+      "Role",
+      "Creative Director, agency:collective"
+    ],
+    [
+      "Year",
+      "2009"
+    ],
+    [
+      "Scope",
+      "Mobile app concepts, user flows, wireframes, UI"
+    ]
+  ],
+  "card": "../images/cs/app-concepts-2009-1.jpg",
+  "hero": "../images/cs/app-concepts-2009-1.jpg",
+  "problem": [
+    "Studio-initiated mobile product concepts, each defined through annotated flows and screens."
+  ],
+  "approach": [
+    "Forage connects people who have fruit trees, eggs or honey to give away with people who want to pick them. Annotated wireframes cover listing items with quantity, location and hours, searching by type, distance and reviews, and requesting, approving and scheduling a pick.",
+    "Pixit is a photo messaging concept in which a message stays locked until a date and time the sender sets. Screens show the locked-message thread with a countdown and the unlock-time picker."
+  ],
+  "results": [],
+  "leadership": [
+    "Directed the studio's concept work on these apps, from flows to screen design."
+  ],
+  "gallery": [
+    [
+      "../images/cs/app-concepts-2009-2.jpg",
+      "Forage: landing screen and search"
+    ],
+    [
+      "../images/cs/app-concepts-2009-3.jpg",
+      "Forage: pick request, calendar and profile"
+    ],
+    [
+      [
+        "../images/cs/app-concepts-2009-4.jpg",
+        "Pixit: locked message thread"
+      ],
+      [
+        "../images/cs/app-concepts-2009-5.jpg",
+        "Pixit: setting an unlock time"
+      ]
+    ]
+  ],
+  "sources": []
+}

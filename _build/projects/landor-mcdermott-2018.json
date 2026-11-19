@@ -1,0 +1,24 @@
+{
+  "slug": "landor-mcdermott-2018",
+  "title": "McDermott",
+  "eyebrow": "Landor · Motion · 2018",
+  "category": "Brand Motion",
+  "year": 2018,
+  "dek": "Brand film storyboards, styleframes and a line-icon set for McDermott, produced in partnership with Landor.",
+  "facts": [["Role", "Creative Director, agency:collective"], ["Partner", "Landor"], ["Client", "McDermott"], ["Year", "2018"], ["Scope", "Storyboards, styleframes, icon set, motion design"]],
+  "card": "../images/cs/landor-mcdermott-2018-1.jpg",
+  "hero": "../images/cs/landor-mcdermott-2018-1.jpg",
+  "problem": ["Landor's \"McDermott Design Intent, Round 1\" storyboards (April 2018) script a short brand film around the line \"Two iconic companies. Now one.\", moving through \"Delivering end to end\", \"Infrastructure and technology solutions\", \"Certainty\", \"Innovation\" and \"Value\" to close on \"We are McDermott.\""],
+  "approach": [
+    "The styleframes set those lines in green type on a pale grey field, with McDermott's capabilities drawn as a navy-and-green line-icon family. Icons multiply and connect with dashed lines for \"End to end infrastructure\", gears and tools fill the frame for \"Designing & building\", and the full set gathers in a ring of circles for \"A new kind of company\".",
+    "The icon set itself covers ten areas of the business: Engineering, Procurement, Construction, Installation, Projects, Fabrication, Solutions, Spoolbases, Fleet and QHSES. Each was also prepared as a stroke version for animation."
+  ],
+  "results": [],
+  "leadership": ["Directed agency:collective's motion and icon work for Landor, from storyboards through animated sequences."],
+  "gallery": [
+    ["../images/cs/landor-mcdermott-2018-2.jpg", "Styleframe: End to end infrastructure"],
+    [["../images/cs/landor-mcdermott-2018-3.jpg", "Styleframe: Technology solutions"], ["../images/cs/landor-mcdermott-2018-4.jpg", "Styleframe: Designing & building"]],
+    ["../images/cs/landor-mcdermott-2018-5.jpg", "Capability icon set"]
+  ],
+  "sources": []
+}

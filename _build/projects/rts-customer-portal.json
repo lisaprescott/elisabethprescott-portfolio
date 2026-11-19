@@ -1,0 +1,65 @@
+{
+  "slug": "rts-customer-portal",
+  "title": "RTS Customer Portal",
+  "eyebrow": "agency:collective · Product · 2021",
+  "category": "Product",
+  "year": 2021,
+  "dek": "A web customer portal for RTS covering waste-collection operations, on-demand pick up, sustainability audits, location ratings and ESG reporting.",
+  "facts": [
+    [
+      "Role",
+      "Creative Director, agency:collective"
+    ],
+    [
+      "Client",
+      "RTS"
+    ],
+    [
+      "Year",
+      "2021"
+    ],
+    [
+      "Scope",
+      "Web portal UX and UI: operations dashboard, on-demand pick up, sustainability audits, ratings, ESG reporting"
+    ]
+  ],
+  "card": "../images/cs/rts-customer-portal-1.jpg",
+  "hero": "../images/cs/rts-customer-portal-1.jpg",
+  "problem": [
+    "RTS needed a single portal where customers could see and manage their waste and recycling service, track collections, and report on sustainability performance."
+  ],
+  "approach": [
+    "The operations dashboard groups active containers by stream (organics, recyclables, trash) with weight, location, schedule and hauler, and lets customers request audits, upgrade containers, pause service or change the pick-up schedule inline. A live map tracks a hauler's route and collection progress.",
+    "A sustainability walkthrough shows audit history per location, waste-stream percentages by material with trends, and implementation suggestions such as new labels, signage and local-compliance notes. A ratings view scores schools and organisations on curriculum, recycling implementation, contamination and participation.",
+    "An ESG reporting screen packages selected metrics for export to standards platforms or as Excel, CSV and PDF files, and a mobile on-demand pick-up view follows a truck to the next stop."
+  ],
+  "results": [],
+  "leadership": [
+    "Directed the UX and UI design of the portal's screens through agency:collective."
+  ],
+  "gallery": [
+    [
+      "../images/cs/rts-customer-portal-2.jpg",
+      "Operations dashboard: current containers and live collection tracking"
+    ],
+    [
+      "../images/cs/rts-customer-portal-3.jpg",
+      "Sustainability walkthrough: completed audit review"
+    ],
+    [
+      [
+        "../images/cs/rts-customer-portal-4.jpg",
+        "Ratings portal landing"
+      ],
+      [
+        "../images/cs/rts-customer-portal-5.jpg",
+        "ESG reporting: integrations and data export"
+      ]
+    ],
+    [
+      "../images/cs/rts-customer-portal-6.jpg",
+      "On-demand pick up, mobile route view"
+    ]
+  ],
+  "sources": []
+}

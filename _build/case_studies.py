@@ -69,6 +69,8 @@ PROJECTS = [
         ],
         "gallery": [],
         "sources": [
+            ("Brand partner case study: Eventbrite rebrand (team credits include Lisa Prescott, SVP Design)", "https://buck.co/work/eventbrite"),
+            ("It's Nice That: Eventbrite's new identity", "https://www.itsnicethat.com/articles/buck-eventbrite-graphic-design-project-100325"),
             ("Eventbrite: Eventbrite welcomes Lisa Prescott as SVP of Design and Brand (Aug 29, 2023)", "https://www.eventbrite.com/blog/?p=408473"),
             ("Creative Bloq: Eventbrite's vibrant rebrand", "https://creativebloq.com/design/branding/eventbrites-vibrant-rebrand-revives-the-magic-of-live-experiences"),
             ("Eventbrite: brand refresh announcement", "https://www.eventbrite.com/blog/?p=436270"),
