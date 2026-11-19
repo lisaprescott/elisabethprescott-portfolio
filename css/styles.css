@@ -581,3 +581,7 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
 
 /* Portrait UI frames: show at native 2x size, centred */
 .cs-figure img[src*="nio-hmi"] { max-width: 600px; margin: 0 auto; display: block; }
+
+/* Large UI-screen heroes (e.g. Ford SYNC): fill the width */
+.cs-hero--ui { padding: 6vh 2vw; }
+.cs-hero--ui img { max-width: 1400px; }

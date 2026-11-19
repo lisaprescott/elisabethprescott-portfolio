@@ -257,6 +257,7 @@ PROJECTS = [
         "dek": "Built Ford's product design organization and led SYNC 3, the system that replaced MyFord Touch.",
         "facts": [("Role", "Senior UX Director"), ("Org", "Product design organization, built from the ground up"), ("Shipped", "2016 model year"), ("Platform", "BlackBerry QNX")],
         "hero": "../images/ford-sync.png",
+        "hero_ui": "../images/cs/ford-sync-ui.png",
         "problem": [
             "MyFord Touch was slow, cluttered and widely criticised, and complaints about it were dragging down Ford's quality and satisfaction scores in J.D. Power and other surveys. Ford needed to win back trust in its in-car experience.",
         ],
@@ -350,6 +351,8 @@ def page(p, prev_p, next_p):
     if p.get("hero_phones"):
         imgs = "\n".join(f'    <img src="{src}" alt="">' for src in p["hero_phones"])
         hero = f'  <div class="cs-hero cs-hero--phones">\n{imgs}\n  </div>'
+    elif p.get("hero_ui"):  # UI screens: show large (1x), legibility beats retina sharpness
+        hero = f'  <div class="cs-hero cs-hero--native cs-hero--ui"><img src="{p["hero_ui"]}" alt="{E(p["title"])}"></div>'
     else:
         w = native_width(p["hero"])
         if w and w < 2880:  # can't fill a 1440px-wide screen at 2x: show at native sharpness
@@ -393,7 +396,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=12">
+<link rel="stylesheet" href="../css/styles.css?v=13">
 </head>
 <body class="cs-page">
 
