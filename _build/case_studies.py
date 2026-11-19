@@ -79,21 +79,24 @@ PROJECTS = [
     {
         "slug": "eventbrite-openai",
         "title": "Eventbrite & OpenAI",
-        "eyebrow": "Eventbrite · Product · AI · 2024",
-        "dek": "An Innovation-team exploration of conversational event discovery: what Eventbrite looks like when the front door is a chat, not a search box.",
+        "eyebrow": "Eventbrite · Product · AI · 2024–2025",
+        "dek": "Design concepts for conversational event discovery, developed with OpenAI as an early partner: finding the right event from how people actually describe what they want to do.",
         "facts": [("Role", "SVP Design"), ("Team", "Design team"), ("Stage", "Concepts"), ("Platform", "OpenAI and Eventbrite collaboration")],
         "hero": "../images/eventbrite-openai.png",
         "problem": [
-            "Discovery was moving into AI assistants. If people asked ChatGPT what to do this weekend, Eventbrite's supply needed to be the answer, and the experience needed to feel like Eventbrite, not a list of links.",
+            "It is hard to find great things to do. People describe an occasion, not a category: who they are with, the mood they want, the night they have in mind. Search results matched what and where, and dropped the rest of what people told us.",
+            "OpenAI was looking for partners to explore how generative AI changes the web, starting with the search box. For Eventbrite, that meant a chance to match people to events by vibe and occasion, not just by keyword.",
         ],
         "approach": [
-            "Stood up a dedicated Innovation team inside Design to address fragmented discovery and declining mobile engagement.",
-            "Directed the team's prototype of an Eventbrite experience inside ChatGPT: conversational queries resolved into rich event cards, social proof from friends, and a path to purchase without leaving the conversation.",
-            "Took the work to the executive team as a point of view on AI-era distribution.",
+            "Mapped where language models could help across the whole journey: inspiring plans at the top of the funnel, matching an occasion during search and browse, answering questions on the listing page, and helping people get ready after they book.",
+            "Set one priority to prove first: match my vibe. The work focused on what models do well today (a deep read of the event inventory, a conversational way to gather context, and finding relationships between events that keywords miss) and kept real-time data, voice and private ranking signals out of scope.",
+            "Directed the design team through four concepts, each with a working prototype, and partnered with engineering on a proof of concept that connected Eventbrite's event data to OpenAI.",
         ],
-        "results": [],
+        "extra": "eventbrite_openai.html",
+        "results": [("4", "design concepts, each prototyped"), ("2", "proof-of-concept use cases: search and chat")],
         "leadership": [
-            "Created the Innovation function and its charter, staffed it from within the design org, and set the questions it had to answer for the business.",
+            "Led the design side of the partnership: framing the opportunity with product and engineering leadership, setting the priority, and directing the team's concepts and prototypes.",
+            "Took the work to the executive team as a point of view on how Eventbrite shows up in AI-led discovery.",
         ],
         "gallery": [],
         "sources": [
@@ -397,7 +400,8 @@ def page(p, prev_p, next_p):
         src, alt = item
         return f'  <figure class="cs-figure"><img src="{src}" alt="{E(alt)}" loading="lazy"><figcaption>{E(alt)}</figcaption></figure>'
     gallery = "\n".join(fig(g) for g in p["gallery"])
-    extra = (pathlib.Path(__file__).parent / "eventbrite_brand.html").read_text() if p.get("extra") == "EVENTBRITE_BRAND" else ""
+    extra_name = {"EVENTBRITE_BRAND": "eventbrite_brand.html"}.get(p.get("extra"), p.get("extra") or "")
+    extra = (pathlib.Path(__file__).parent / extra_name).read_text() if extra_name.endswith(".html") else ""
     sources = ""
     if p["sources"]:
         items = "\n".join(f'      <li><a href="{E(u)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in p["sources"])
@@ -417,7 +421,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=17">
+<link rel="stylesheet" href="../css/styles.css?v=18">
 </head>
 <body class="cs-page">
 

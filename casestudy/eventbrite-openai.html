@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eventbrite &amp; OpenAI — Elisabeth Prescott</title>
-<meta name="description" content="An Innovation-team exploration of conversational event discovery: what Eventbrite looks like when the front door is a chat, not a search box.">
+<meta name="description" content="Design concepts for conversational event discovery, developed with OpenAI as an early partner: finding the right event from how people actually describe what they want to do.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=17">
+<link rel="stylesheet" href="../css/styles.css?v=18">
 </head>
 <body class="cs-page">
 
@@ -22,9 +22,9 @@
 <main class="cs">
   <header class="cs-header">
     <a class="cs-back" href="../index.html#work">← All work</a>
-    <div class="masthead__eyebrow">Eventbrite · Product · AI · 2024</div>
+    <div class="masthead__eyebrow">Eventbrite · Product · AI · 2024–2025</div>
     <h1 class="cs-title">Eventbrite &amp; OpenAI</h1>
-    <p class="cs-dek">An Innovation-team exploration of conversational event discovery: what Eventbrite looks like when the front door is a chat, not a search box.</p>
+    <p class="cs-dek">Design concepts for conversational event discovery, developed with OpenAI as an early partner: finding the right event from how people actually describe what they want to do.</p>
     <div class="cs-facts">
       <div class="cs-fact"><div class="cs-fact__label">Role</div><div class="cs-fact__value">SVP Design</div></div>
       <div class="cs-fact"><div class="cs-fact__label">Team</div><div class="cs-fact__value">Design team</div></div>
@@ -38,29 +38,101 @@
   <section class="cs-section">
     <h2 class="cs-label">The problem</h2>
     <div class="cs-body">
-      <p>Discovery was moving into AI assistants. If people asked ChatGPT what to do this weekend, Eventbrite&#x27;s supply needed to be the answer, and the experience needed to feel like Eventbrite, not a list of links.</p>
+      <p>It is hard to find great things to do. People describe an occasion, not a category: who they are with, the mood they want, the night they have in mind. Search results matched what and where, and dropped the rest of what people told us.</p>
+      <p>OpenAI was looking for partners to explore how generative AI changes the web, starting with the search box. For Eventbrite, that meant a chance to match people to events by vibe and occasion, not just by keyword.</p>
     </div>
   </section>
 
   <section class="cs-section">
     <h2 class="cs-label">The approach</h2>
     <div class="cs-body">
-      <p>Stood up a dedicated Innovation team inside Design to address fragmented discovery and declining mobile engagement.</p>
-      <p>Directed the team&#x27;s prototype of an Eventbrite experience inside ChatGPT: conversational queries resolved into rich event cards, social proof from friends, and a path to purchase without leaving the conversation.</p>
-      <p>Took the work to the executive team as a point of view on AI-era distribution.</p>
+      <p>Mapped where language models could help across the whole journey: inspiring plans at the top of the funnel, matching an occasion during search and browse, answering questions on the listing page, and helping people get ready after they book.</p>
+      <p>Set one priority to prove first: match my vibe. The work focused on what models do well today (a deep read of the event inventory, a conversational way to gather context, and finding relationships between events that keywords miss) and kept real-time data, voice and private ranking signals out of scope.</p>
+      <p>Directed the design team through four concepts, each with a working prototype, and partnered with engineering on a proof of concept that connected Eventbrite&#x27;s event data to OpenAI.</p>
     </div>
   </section>
 
+  <section class="eb-block">
+    <div class="eb-block__head">
+      <h2 class="cs-label">Across the journey</h2>
+      <p class="eb-block__intro">Where conversational AI could change the experience, from first spark to the night itself.</p>
+    </div>
+    <ol class="ai-journey">
+      <li><span class="ai-journey__stage">Upper funnel</span><strong>Inspire plans</strong><p>“An authentic 48 hours in San Diego.” Scenes and plans, not single listings.</p></li>
+      <li><span class="ai-journey__stage">Search &amp; browse</span><strong>Match my occasion</strong><p>Express the occasion and the group, then see a range of events that fit.</p></li>
+      <li><span class="ai-journey__stage">Listing page</span><strong>Tell me more</strong><p>Artist, venue, policies and parking in one answer, plus alternatives if this one isn’t right.</p></li>
+      <li><span class="ai-journey__stage">After booking</span><strong>Get ready with me</strong><p>Nearby food, transport and event updates, building a relationship past the ticket.</p></li>
+    </ol>
+  </section>
+
+  <section class="eb-block eb-block--dark">
+    <div class="eb-block__head">
+      <h2 class="cs-label">Match my vibe</h2>
+      <p class="eb-block__intro">People describe an occasion, not a category. These are the kinds of requests the concepts were designed around.</p>
+    </div>
+    <div class="ai-quotes">
+      <blockquote>“Something for a couple to enjoy on a rainy evening.”</blockquote>
+      <blockquote>“My friend’s birthday is on a Sunday. Trying to find a hip hop vibe for brunch.”</blockquote>
+      <blockquote>“Something chill and low key, to get to know new people. Maybe be creative.”</blockquote>
+      <blockquote>“Date night. I don’t want a show, I want us to be talking. A night market would be ideal.”</blockquote>
+    </div>
+    <div class="ai-pairs">
+      <p class="eb-caption" style="margin-top:0">What a model can see that keywords miss</p>
+      <ul>
+        <li><span>Roller skating</span><em>≈</em><span>Silent disco</span></li>
+        <li><span>Boozy brunch</span><em>≈</em><span>Rooftop party</span></li>
+        <li><span>Sip &amp; paint</span><em>≈</em><span>Bingo &amp; beats</span></li>
+        <li><span>Roller skating</span><em>≠</em><span>Roller blading</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="eb-block">
+    <div class="eb-block__head">
+      <h2 class="cs-label">Four concepts</h2>
+      <p class="eb-block__intro">Each concept was prototyped end to end, from the first prompt to a tuned feed of events.</p>
+    </div>
+    <div class="ai-concepts">
+      <article>
+        <div class="ai-concepts__num">01</div>
+        <h3>The Concierge</h3>
+        <p>A trusted guide that understands intent and recommends for any occasion. Two forms: AI search with a conversational welcome and better recommendations, and a conversational feed with in-feed prompts and micro-tuning.</p>
+      </article>
+      <article>
+        <div class="ai-concepts__num">02</div>
+        <h3>The Aggregator</h3>
+        <p>Connect social accounts to see events from across your networks and the web in one place: an AI-built It-List, a map view, and simple ticket sharing with friends.</p>
+      </article>
+      <article>
+        <div class="ai-concepts__num">03</div>
+        <h3>Mood Profiler</h3>
+        <p>“Tune your vibes.” Pick the moods you’re in, watch your label update in real time, and get a feed badged by mood match. Editable any time from your account.</p>
+      </article>
+      <article>
+        <div class="ai-concepts__num">04</div>
+        <h3>Tune with GIFs</h3>
+        <p>When scrolling stalls, a bottom sheet offers help. Three adaptive questions answered with GIFs lead to a dedicated feed of personalised suggestions.</p>
+      </article>
+    </div>
+    <p class="ai-note">The common thread: to serve people personally we need to know them, so every concept builds a profile that improves as people use it.</p>
+  </section>
 
 
-
+  <section class="cs-section">
+    <h2 class="cs-label">Results</h2>
+    <div class="cs-stats">
+      <div class="cs-stat"><div class="cs-stat__value">4</div><div class="cs-stat__label">design concepts, each prototyped</div></div>
+      <div class="cs-stat"><div class="cs-stat__value">2</div><div class="cs-stat__label">proof-of-concept use cases: search and chat</div></div>
+    </div>
+  </section>
 
 
 
   <section class="cs-section">
     <h2 class="cs-label">Leadership</h2>
     <div class="cs-body">
-      <p>Created the Innovation function and its charter, staffed it from within the design org, and set the questions it had to answer for the business.</p>
+      <p>Led the design side of the partnership: framing the opportunity with product and engineering leadership, setting the priority, and directing the team&#x27;s concepts and prototypes.</p>
+      <p>Took the work to the executive team as a point of view on how Eventbrite shows up in AI-led discovery.</p>
     </div>
   </section>
 
