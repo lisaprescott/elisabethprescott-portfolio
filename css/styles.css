@@ -706,3 +706,9 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
   .ai-journey li::after { content: none; }
   .ai-quotes blockquote { font-size: 21px; }
 }
+.ai-concepts__media { background: #ece7dd; margin: -28px -28px 24px; display: flex; justify-content: center; padding: 28px 0 0; overflow: hidden; height: 420px; }
+.ai-concepts__media video { height: 100%; width: auto; max-width: 100%; display: block; border-radius: 22px 22px 0 0; object-fit: cover; object-position: top; }
+.ai-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 32px; }
+.ai-strip video, .ai-strip img { width: 100%; height: auto; display: block; border-radius: 18px; background: #fff; border: 1px solid var(--border); }
+.ai-strip figcaption { font-size: 12px; color: #7a7366; margin-top: 8px; line-height: 1.4; }
+@media (max-width: 900px) { .ai-strip { grid-template-columns: repeat(2, 1fr); } .ai-concepts__media { height: 360px; } }
