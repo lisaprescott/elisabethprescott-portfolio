@@ -195,7 +195,12 @@ PROJECTS = [
         "leadership": [
             "Worked with founders Kyle and Kim Cooper in a 10-person studio, leading design for the platform and client worlds.",
         ],
-        "gallery": [("../images/cs/spatialand-parallax.jpg", "Spatialand brand imagery: parallax study")],
+        "gallery": [
+            ("../images/cs/spatia-world-movement.jpg", "A Spatia world in progress: gears, spheres and dial markings at architectural scale"),
+            [("../images/cs/spatia-style-product.jpg", "In-world UI: choosing between a style and a product, each held in its own sphere"), ("../images/cs/spatia-room-set.jpg", "A platform world room set, rendered for the headset")],
+            ("../images/cs/spatia-world-movement-2.jpg", "Alternate pass on the movement world"),
+            ("../images/cs/spatia-storyboard.jpg", "Storyboard: from the headset into the world, as the walls of the pod open"),
+        ],
         "sources": [
             ("UploadVR: Prologue Immersive introduces Spatialand", "https://www.uploadvr.com/prologue-immersive-introduces-spatialand-vr-interface/"),
             ("UploadVR: Walmart acquires Spatialand", "https://www.uploadvr.com/walmart-acquires-content-studio-spatialand-drive-vr-retail/"),

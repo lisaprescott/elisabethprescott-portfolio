@@ -665,3 +665,4 @@ html:has(body.resume-page), html:has(body.cs-page) { scroll-snap-type: none; }
   .eb-lines p { font-size: 28px; }
   .eb-amp { grid-template-columns: 1fr; }
 }
+.cs-figure img[src*="spatia-storyboard"] { max-width: 560px; }
