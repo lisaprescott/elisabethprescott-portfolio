@@ -1,0 +1,31 @@
+{
+  "slug": "otto-palimpsest",
+  "title": "Otto",
+  "eyebrow": "Yale School of Art · AI · 2005",
+  "category": "Product Exploratory",
+  "year": 2005,
+  "featured": true,
+  "dek": "An early automated design system that laid out the 2005 issue of Palimpsest, the Yale School of Art's literary magazine: automation with craft built in.",
+  "facts": [["Role", "Designer, with Otto"], ["Context", "Yale School of Art, MFA"], ["Built in", "Processing"], ["Published", "Palimpsest 05 / Otto Edition"]],
+  "card": "../images/cs/otto-cover-poster-press.jpg",
+  "hero": "../images/cs/otto-cover-poster-press.jpg",
+  "problem": [
+    "Could a designer hand layout decisions to a system and still keep a curatorial hold on the work? Palimpsest, the School of Art's literary magazine, was the test: a whole issue designed largely by proxy."
+  ],
+  "approach": [
+    "Built Otto (short for automatic) with a small group of graduate students: editors, programmers and graphic designers. Every submission was tagged with a three-digit number, and those numbers formed the strict file structure Otto needed for its analysis.",
+    "Contributors answered a short questionnaire. Eleven multiple-choice questions, each paired with an icon, shaped the page; a twelfth chose one of four templates: clean and pristine, full and colourful, illustrated, or lots of patterns.",
+    "Otto, written in Processing, averaged the colour in every image, converted it to CMYK and used the ink saturation to place each work in the book. Text stayed in the editors' order, while the art was hand-shuffled at the bindery, so every copy sequences the same material differently."
+  ],
+  "extra": "otto.html",
+  "results": [["12", "questions that drove each layout"], ["4", "templates Otto chose between"], ["1 of 1", "every copy sequenced differently"]],
+  "leadership": [
+    "Designed the system and the publication with Otto, credited as \"Designers: Elisabeth Prescott and Otto\". It was precursor work for the AI and systems design that runs through every role since: automation that keeps craft and authorship intact."
+  ],
+  "gallery": [
+    [["../images/cs/otto-cover-poster.jpg", "Cover poster, Palimpsest 05 / Otto Edition: \"Designed by Otto\""], ["../images/cs/otto-spread-5.jpg", "A spread laid out by Otto: metadata rail, icon row and colour-coded fields"]]
+  ],
+  "sources": [
+    ["Design Observer: New Models for Design Efficiency: Introducing Otto (Jessica Helfand, July 8, 2005)", "https://designobserver.com/new-models-for-design-efficiency-introducing-otto/"]
+  ]
+}

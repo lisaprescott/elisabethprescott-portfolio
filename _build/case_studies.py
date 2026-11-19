@@ -421,7 +421,7 @@ def page(p, prev_p, next_p):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=19">
+<link rel="stylesheet" href="../css/styles.css?v=20">
 </head>
 <body class="cs-page">
 
@@ -519,7 +519,7 @@ def write_index_grid(more):
         f'    <a href="casestudy/{E(d["slug"])}.html" class="work-card" data-cat="{E(d.get("category", ""))}">'
         f'<div class="work-card__img" style="background-image:url({E(d["card"].replace("../", ""))})"></div>'
         f'<div class="work-card__meta">{E(d["eyebrow"])}</div><div class="work-card__title">{E(d["title"])}</div></a>'
-        for d in more)
+        for d in more if not d.get("featured"))
     start, end = html_.index(a) + len(a), html_.index(b)
     index.write_text(html_[:start] + "\n" + cards + "\n    " + html_[end:])
 
