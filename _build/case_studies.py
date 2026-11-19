@@ -31,7 +31,7 @@ PROJECTS = [
             "Had the design systems team rebuild the interface on a modular, card-based system so product teams could extend it after launch, and aligned the release with the brand refresh as a single moment.",
             "Sponsored a three-month beta with product and data leadership to prove revenue impact before global rollout.",
         ],
-        "results": [("+12%", "paid tickets on iOS; $3M net revenue in a 3-month beta"), ("+8%", "paid tickets on Android; $2M net revenue"), ("+23%", "monthly active users"), ("+14%", "traffic to Eventbrite surfaces year over year (Instrument)")],
+        "results": [("Webby", "Nominee, Best User Experience, 2026"), ("+12%", "paid tickets on iOS; $3M net revenue in a 3-month beta"), ("+8%", "paid tickets on Android; $2M net revenue"), ("+23%", "monthly active users"), ("+14%", "traffic to Eventbrite surfaces year over year (Instrument)")],
         "leadership": [
             "Built and led a 120-person organization spanning product design, brand, design systems, UX research, innovation and design operations, reporting to the CPO.",
             "Partnered with the CPO and CMO on the product vision, brought in Instrument as an extension of the in-house team, and held the bar on a single system across product and brand so both launched as one story.",
@@ -81,7 +81,7 @@ PROJECTS = [
         "title": "Eventbrite & OpenAI",
         "eyebrow": "Eventbrite · Product · AI · 2024",
         "dek": "An Innovation-team exploration of conversational event discovery: what Eventbrite looks like when the front door is a chat, not a search box.",
-        "facts": [("Role", "SVP Design"), ("Team", "Innovation team, stood up within Design"), ("Stage", "Concept and prototype"), ("Platform", "ChatGPT")],
+        "facts": [("Role", "SVP Design"), ("Team", "Design team"), ("Stage", "Concepts"), ("Platform", "OpenAI and Eventbrite collaboration")],
         "hero": "../images/eventbrite-openai.png",
         "problem": [
             "Discovery was moving into AI assistants. If people asked ChatGPT what to do this weekend, Eventbrite's supply needed to be the answer, and the experience needed to feel like Eventbrite, not a list of links.",

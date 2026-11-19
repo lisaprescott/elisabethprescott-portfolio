@@ -1,0 +1,24 @@
+{
+  "slug": "igt-moving-brands",
+  "title": "IGT Vision Video",
+  "eyebrow": "Moving Brands · Motion · 2011",
+  "category": "Motion",
+  "year": 2011,
+  "dek": "Illustrated motion design for an IGT vision video, produced with Moving Brands in 2011.",
+  "facts": [["Role", "Creative Director, agency:collective"], ["Client", "IGT"], ["Partner", "Moving Brands"], ["Year", "2011"], ["Scope", "Storyboards, illustration, animatic, animation"]],
+  "card": "../images/cs/igt-moving-brands-1.jpg",
+  "hero": "../images/cs/igt-moving-brands-1.jpg",
+  "problem": ["Moving Brands needed a vision video for IGT; the files show a narrative arc told in chapters named \"beginning of time,\" \"during the industrial\" and \"and paradigm shifts,\" ending on the IGT mark."],
+  "approach": [
+    "The studio built the piece in flat, monochrome blue illustration: a figure carrying fire alongside woolly mammoths, a power grid wrapping a globe, a cruise ship, city skylines including a Las Vegas pyramid and Paris, a laptop interface, and stacked cubes and an \"Innovation\" pyramid used as abstract building blocks.",
+    "Work moved from Illustrator boards and an animatic to the final cut, which closes with kinetic type (\"Under pressure / Perform\"), coins resolving into the IGT logo, and a \"Great experiences for players\" lockup."
+  ],
+  "results": [],
+  "leadership": ["Directed agency:collective's illustration and animation for the video, working for Moving Brands."],
+  "gallery": [
+    ["../images/cs/igt-moving-brands-2.jpg", "Board A: the beginning of time"],
+    [["../images/cs/igt-moving-brands-3.jpg", "Cruise ship scene"], ["../images/cs/igt-moving-brands-4.jpg", "Laptop interface scene"]],
+    [["../images/cs/igt-moving-brands-5.jpg", "Cube field transition"], ["../images/cs/igt-moving-brands-6.jpg", "Coin resolving into the IGT mark"]]
+  ],
+  "sources": []
+}

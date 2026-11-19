@@ -1,0 +1,22 @@
+{
+  "slug": "audi-night-vision",
+  "title": "Audi A8 Night Vision",
+  "eyebrow": "agency:collective · Motion · 2010",
+  "category": "Motion",
+  "year": 2010,
+  "dek": "An explainer animation for the Audi A8 night vision assistant, showing how the system detects a pedestrian and alerts the driver.",
+  "facts": [["Role", "Creative Director, agency:collective"], ["Client", "Audi"], ["Year", "2010"], ["Scope", "3D explainer animation"]],
+  "card": "../images/cs/audi-night-vision-1.jpg",
+  "hero": "../images/cs/audi-night-vision-1.jpg",
+  "problem": ["The files centre on a short animation explaining the A8 night vision assistant, a feature that detects pedestrians beyond the reach of the headlights."],
+  "approach": [
+    "The animation follows an A8 from above on a dark country road. Colour-coded zones project ahead of the car — blue within the headlight beam, yellow for the wider detection field, and red for the area where a pedestrian becomes a risk.",
+    "When a pedestrian enters the red zone, an inset of the instrument-cluster display shows the thermal image with the figure highlighted, alongside audible and visual warning icons."
+  ],
+  "results": [],
+  "leadership": ["Directed the studio's work on the animation."],
+  "gallery": [
+    [["../images/cs/audi-night-vision-2.jpg", "Detection zones ahead of the car"], ["../images/cs/audi-night-vision-3.jpg", "Pedestrian detected, cluster display inset"]]
+  ],
+  "sources": []
+}
